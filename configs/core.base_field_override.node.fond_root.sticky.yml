@@ -1,0 +1,22 @@
+uuid: ca9d5b19-e786-4d60-b9de-1cd088014f2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+id: node.fond_root.sticky
+field_name: sticky
+entity_type: node
+bundle: fond_root
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

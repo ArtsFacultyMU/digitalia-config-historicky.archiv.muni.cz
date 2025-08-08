@@ -1,0 +1,39 @@
+label: 'Hromadné úpravy'
+display:
+  default:
+    display_title: Hlavní
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Vybrat
+          exposed_sorts_label: 'Seřadit podle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Počet položek na stránku'
+            items_per_page_options_all_label: '- Všechny -'
+            offset_label: Odsazení
+      fields:
+        title:
+          label: Název
+        type:
+          label: Typ
+        field_member_of:
+          label: 'Nadřazená položka (ID)'
+      filters:
+        type:
+          expose:
+            label: Typ
+          group_info:
+            label: 'Typ obsahu'
+        title:
+          expose:
+            label: Název
+      title: 'Hromadné úpravy'
+  page_1:
+    display_title: Strana
+    display_options:
+      menu:
+        title: 'Hromadné úpravy'

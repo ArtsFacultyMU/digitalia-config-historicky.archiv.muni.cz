@@ -1,0 +1,73 @@
+uuid: da2f89e1-8e53-4db5-836f-26eb32ee2b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_fond_collection
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Fond/Collection add children'
+name: add_children_to_fond_fond_collection
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: fe09d2d6-f66f-424a-a5d0-efa202ab46f9
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3d4cef56-d6d3-4c88-9d5c-3e74fd8cd7ee
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection: collection
+      fond: fond
+reactions:
+  blocks:
+    id: blocks
+    uuid: b8c850c8-0182-44fd-b0fe-e8ca140d7b04
+    blocks:
+      2d691d1c-b9ad-4a50-aa41-4c463cd4be91:
+        uuid: 2d691d1c-b9ad-4a50-aa41-4c463cd4be91
+        id: 'simple_block:add_children_of_fond_collection'
+        label: 'Add children of fond/collection'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_collection
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: add_children_to_fond_fond_collection
+        context_mapping: {  }
+        third_party_settings: {  }
+      10f957ea-a747-452b-8df3-d039bfe07581:
+        uuid: 10f957ea-a747-452b-8df3-d039bfe07581
+        id: 'simple_block:add_children_of_fond_collection'
+        label: 'Add children of fond/collection'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_collection
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: add_children_to_fond_fond_collection
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -11

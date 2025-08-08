@@ -1,0 +1,33 @@
+uuid: 3c6dbfd0-e14a-45e9-88a2-5c24857a42b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.scan
+    - taxonomy.vocabulary.islandora_models
+  content:
+    - 'taxonomy_term:islandora_models:8122f150-3e8f-41af-92ce-7bca1f614895'
+id: node.scan.field_model
+field_name: field_model
+entity_type: node
+bundle: scan
+label: Model
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 8122f150-3e8f-41af-92ce-7bca1f614895
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      islandora_models: islandora_models
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

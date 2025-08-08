@@ -1,0 +1,23 @@
+uuid: 4ed3ffcb-8b71-4919-bd9f-0b838d021fbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.fond_group
+id: node.fond_group.field_weight
+field_name: field_weight
+entity_type: node
+bundle: fond_group
+label: 'Custom Sort Value'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,15 @@
+uuid: dbc9b0ae-388b-40ac-8250-b58795f7d7a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module: {  }
+_core:
+  default_config_hash: Zctdw0Qjxs9yz0TgG8o5WEVPoCvtxKAIx8MgaMXtZzQ
+id: node.binary
+label: Binary
+description: ''
+targetEntityType: node
+cache: true

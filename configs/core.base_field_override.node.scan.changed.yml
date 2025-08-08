@@ -1,0 +1,18 @@
+uuid: c0b54cf4-5976-4e4a-acf0-f4627634a30a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+id: node.scan.changed
+field_name: changed
+entity_type: node
+bundle: scan
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,4 @@
+title: 'Přidat medium'
+content:
+  value: "<p><a href=\"/media/add/image?edit%5Bfield_media_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Přidat obrázek (mimo tiff)</a></p>\r\n\r\n<p><a href=\"/media/add/file?edit%5Bfield_media_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Přidat soubor</a></p>\r\n"
+  format: basic_html

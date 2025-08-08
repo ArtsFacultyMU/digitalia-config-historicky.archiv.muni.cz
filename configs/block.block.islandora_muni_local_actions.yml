@@ -1,0 +1,20 @@
+uuid: e30d974c-b65e-47e6-8cde-941d065e9d6b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: e7wcXyDvUwJwgGFclMVLIMEYIcGkyQE0n2fv5RxPDsc
+id: islandora_muni_local_actions
+theme: islandora_muni
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

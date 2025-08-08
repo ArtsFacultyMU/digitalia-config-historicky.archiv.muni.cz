@@ -1,0 +1,24 @@
+uuid: 484374c3-31da-4e1f-9066-dde6701e2d7e
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: 'Editor public'
+description: ''
+conf:
+  extensions: 'csv tif'
+  maxsize: null
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  folders:
+    -
+      path: scan_upload
+      permissions:
+        browse_files: true
+        upload_files: true
+        delete_files: true

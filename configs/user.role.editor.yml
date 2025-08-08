@@ -1,0 +1,263 @@
+uuid: 36ad59b3-fdeb-4c76-9036-303506129b78
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - media.type.audio
+    - media.type.document
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.collection
+    - node.type.collection_group
+    - node.type.directory
+    - node.type.fond
+    - node.type.fond_group
+    - node.type.inventory_item
+    - node.type.islandora_object
+    - node.type.page
+    - node.type.scan
+    - taxonomy.vocabulary.accessibility
+    - taxonomy.vocabulary.corporate_body
+    - taxonomy.vocabulary.family
+    - taxonomy.vocabulary.genre
+    - taxonomy.vocabulary.geo_location
+    - taxonomy.vocabulary.islandora_display
+    - taxonomy.vocabulary.islandora_media_use
+    - taxonomy.vocabulary.islandora_models
+    - taxonomy.vocabulary.language
+    - taxonomy.vocabulary.person
+    - taxonomy.vocabulary.physical_form
+    - taxonomy.vocabulary.resource_types
+    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.tags
+  module:
+    - content_translation
+    - file
+    - file_replace
+    - filter
+    - flysystem
+    - image
+    - imce
+    - islandora
+    - language
+    - media
+    - migrate_tools
+    - node
+    - rest
+    - system
+    - taxonomy
+    - toolbar
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer content translation'
+  - 'administer flysystem'
+  - 'administer image styles'
+  - 'administer imce'
+  - 'administer languages'
+  - 'administer media'
+  - 'administer media types'
+  - 'administer migrations'
+  - 'administer nodes'
+  - 'administer rest resources'
+  - 'administer taxonomy'
+  - 'bypass node access'
+  - 'change own username'
+  - 'create audio media'
+  - 'create collection content'
+  - 'create collection_group content'
+  - 'create content translations'
+  - 'create directory content'
+  - 'create document media'
+  - 'create extracted_text media'
+  - 'create file media'
+  - 'create fond content'
+  - 'create fond_group content'
+  - 'create image media'
+  - 'create inventory_item content'
+  - 'create media'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create scan content'
+  - 'create terms in accessibility'
+  - 'create terms in corporate_body'
+  - 'create terms in family'
+  - 'create terms in genre'
+  - 'create terms in geo_location'
+  - 'create terms in islandora_display'
+  - 'create terms in islandora_media_use'
+  - 'create terms in islandora_models'
+  - 'create terms in language'
+  - 'create terms in person'
+  - 'create terms in physical_form'
+  - 'create terms in resource_types'
+  - 'create terms in subject'
+  - 'create terms in tags'
+  - 'create video media'
+  - 'delete any audio media'
+  - 'delete any collection content'
+  - 'delete any collection_group content'
+  - 'delete any directory content'
+  - 'delete any document media'
+  - 'delete any extracted_text media'
+  - 'delete any file media'
+  - 'delete any fond content'
+  - 'delete any fond_group content'
+  - 'delete any image media'
+  - 'delete any inventory_item content'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any remote_video media'
+  - 'delete any scan content'
+  - 'delete any video media'
+  - 'delete article revisions'
+  - 'delete collection revisions'
+  - 'delete collection_group revisions'
+  - 'delete content translations'
+  - 'delete directory revisions'
+  - 'delete fond revisions'
+  - 'delete fond_group revisions'
+  - 'delete inventory_item revisions'
+  - 'delete islandora_object revisions'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own collection content'
+  - 'delete own collection_group content'
+  - 'delete own directory content'
+  - 'delete own document media'
+  - 'delete own extracted_text media'
+  - 'delete own file media'
+  - 'delete own files'
+  - 'delete own fond content'
+  - 'delete own fond_group content'
+  - 'delete own image media'
+  - 'delete own inventory_item content'
+  - 'delete own islandora_object content'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own scan content'
+  - 'delete own video media'
+  - 'delete page revisions'
+  - 'delete scan revisions'
+  - 'delete terms in accessibility'
+  - 'delete terms in corporate_body'
+  - 'delete terms in family'
+  - 'delete terms in genre'
+  - 'delete terms in geo_location'
+  - 'delete terms in islandora_display'
+  - 'delete terms in islandora_media_use'
+  - 'delete terms in islandora_models'
+  - 'delete terms in language'
+  - 'delete terms in person'
+  - 'delete terms in physical_form'
+  - 'delete terms in resource_types'
+  - 'delete terms in subject'
+  - 'delete terms in tags'
+  - 'edit any audio media'
+  - 'edit any collection content'
+  - 'edit any collection_group content'
+  - 'edit any directory content'
+  - 'edit any document media'
+  - 'edit any extracted_text media'
+  - 'edit any file media'
+  - 'edit any fond content'
+  - 'edit any fond_group content'
+  - 'edit any image media'
+  - 'edit any inventory_item content'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any scan content'
+  - 'edit any video media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own collection content'
+  - 'edit own collection_group content'
+  - 'edit own directory content'
+  - 'edit own document media'
+  - 'edit own extracted_text media'
+  - 'edit own file media'
+  - 'edit own fond content'
+  - 'edit own fond_group content'
+  - 'edit own image media'
+  - 'edit own inventory_item content'
+  - 'edit own islandora_object content'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own scan content'
+  - 'edit own video media'
+  - 'edit terms in accessibility'
+  - 'edit terms in corporate_body'
+  - 'edit terms in family'
+  - 'edit terms in genre'
+  - 'edit terms in geo_location'
+  - 'edit terms in islandora_display'
+  - 'edit terms in islandora_media_use'
+  - 'edit terms in islandora_models'
+  - 'edit terms in language'
+  - 'edit terms in person'
+  - 'edit terms in physical_form'
+  - 'edit terms in resource_types'
+  - 'edit terms in subject'
+  - 'edit terms in tags'
+  - 'manage media'
+  - 'manage members'
+  - 'replace files'
+  - 'revert article revisions'
+  - 'revert collection revisions'
+  - 'revert collection_group revisions'
+  - 'revert directory revisions'
+  - 'revert fond revisions'
+  - 'revert fond_group revisions'
+  - 'revert inventory_item revisions'
+  - 'revert islandora_object revisions'
+  - 'revert page revisions'
+  - 'revert scan revisions'
+  - 'translate accessibility taxonomy_term'
+  - 'translate any entity'
+  - 'translate audio media'
+  - 'translate corporate_body taxonomy_term'
+  - 'translate family taxonomy_term'
+  - 'translate file media'
+  - 'translate genre taxonomy_term'
+  - 'translate geo_location taxonomy_term'
+  - 'translate image media'
+  - 'translate islandora_media_use taxonomy_term'
+  - 'translate islandora_models taxonomy_term'
+  - 'translate islandora_object node'
+  - 'translate language taxonomy_term'
+  - 'translate person taxonomy_term'
+  - 'translate physical_form taxonomy_term'
+  - 'translate resource_types taxonomy_term'
+  - 'translate subject taxonomy_term'
+  - 'translate video media'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view checksums'
+  - 'view collection revisions'
+  - 'view collection_group revisions'
+  - 'view directory revisions'
+  - 'view fond revisions'
+  - 'view fond_group revisions'
+  - 'view inventory_item revisions'
+  - 'view islandora_object revisions'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view scan revisions'
+  - 'view the administration theme'

@@ -1,0 +1,22 @@
+uuid: db72c24d-c940-4692-aa23-6745ea6044f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection_root
+id: node.collection_root.promote
+field_name: promote
+entity_type: node
+bundle: collection_root
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

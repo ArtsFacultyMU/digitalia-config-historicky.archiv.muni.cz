@@ -1,0 +1,82 @@
+uuid: 008a0d0a-a8e8-4799-95b0-16b9ddde168e
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_item_language
+field_name: field_item_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: english
+      label: Angličtina
+    -
+      value: armenian
+      label: Arménština
+    -
+      value: bulgarian
+      label: Bulharština
+    -
+      value: czech
+      label: Čeština
+    -
+      value: french
+      label: Francouzština
+    -
+      value: georgian
+      label: Gruzínština
+    -
+      value: dutch
+      label: Holandština
+    -
+      value: italian
+      label: Italština
+    -
+      value: japanese
+      label: Japonština
+    -
+      value: latin
+      label: Latina
+    -
+      value: hungarian
+      label: Maďarština
+    -
+      value: german
+      label: Němčina
+    -
+      value: polish
+      label: Polština
+    -
+      value: romanian
+      label: Rumunština
+    -
+      value: russian
+      label: Ruština
+    -
+      value: slovak
+      label: Slovenština
+    -
+      value: serbo-croatian
+      label: Srbochorvatština
+    -
+      value: spanish
+      label: Španělština
+    -
+      value: turkish
+      label: Turečtina
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

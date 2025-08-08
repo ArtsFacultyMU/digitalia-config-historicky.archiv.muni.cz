@@ -1,0 +1,28 @@
+uuid: fef2b470-1b97-473b-b81c-db899e27cc6f
+langcode: en
+status: false
+dependencies:
+  config:
+    - simple_block.simple_block.ics_muni_logo
+  module:
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: islandora_muni_icsmunilogo
+theme: islandora_muni
+region: header
+weight: -5
+provider: null
+plugin: 'simple_block:ics_muni_logo'
+settings:
+  id: 'simple_block:ics_muni_logo'
+  label: 'ics muni logo'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

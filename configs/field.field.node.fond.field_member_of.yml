@@ -1,0 +1,28 @@
+uuid: 4d099cda-6cda-4871-95b7-e04dab7e7495
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.fond
+    - node.type.fond_group
+id: node.fond.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: fond
+label: 'Member of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fond_group: fond_group
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: b7f5902c-fc3a-4c30-aba1-fa45f94352d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_access
+    - node.type.fond
+  module:
+    - options
+id: node.fond.field_access
+field_name: field_access
+entity_type: node
+bundle: fond
+label: 'Accessibility (old)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

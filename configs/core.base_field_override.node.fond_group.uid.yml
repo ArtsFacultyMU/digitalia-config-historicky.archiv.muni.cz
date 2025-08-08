@@ -1,0 +1,20 @@
+uuid: b8e2adc0-cc00-4149-8f0c-7a4ab22e7508
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_group
+id: node.fond_group.uid
+field_name: uid
+entity_type: node
+bundle: fond_group
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

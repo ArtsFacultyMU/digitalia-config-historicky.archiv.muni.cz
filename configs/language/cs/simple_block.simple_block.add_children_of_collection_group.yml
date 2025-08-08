@@ -1,0 +1,4 @@
+title: 'Přidat členy skupiny fondů'
+content:
+  value: "<p><a href=\"/node/add/fond?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Přidat sbírku</a></p>\r\n"
+  format: basic_html

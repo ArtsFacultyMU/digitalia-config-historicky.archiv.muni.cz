@@ -1,0 +1,11 @@
+uuid: b549df28-0be0-4512-b0e1-bcddbd74b874
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: add_children_of_collection_root
+title: 'Add children of collection root'
+content:
+  value: "<p><a href=\"/node/add/collection_group?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Add group</a></p>\r\n"
+  format: basic_html

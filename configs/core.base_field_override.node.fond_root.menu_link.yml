@@ -1,0 +1,20 @@
+uuid: 32bde796-03b9-4a70-a4fb-f375139c2426
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+id: node.fond_root.menu_link
+field_name: menu_link
+entity_type: node
+bundle: fond_root
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

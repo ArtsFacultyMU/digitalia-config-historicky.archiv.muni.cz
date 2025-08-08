@@ -1,0 +1,17 @@
+uuid: 7ea9fed4-f6d5-45c6-b3a6-126ab7c2498d
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - media
+  enforced:
+    module:
+      - islandora
+_core:
+  default_config_hash: EnxdDotQQOCl34Hxl--D5YLz7H8aINkSkVeQR14ooTQ
+id: delete_media_and_file
+label: 'Delete media and file(s)'
+type: media
+plugin: delete_media_and_file
+configuration: {  }

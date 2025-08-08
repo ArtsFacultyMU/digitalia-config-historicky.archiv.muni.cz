@@ -1,0 +1,28 @@
+uuid: 88618b84-d73d-4f35-ac20-8e3bd83f8a8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.copyright_and_webmaster
+  module:
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: islandora_muni_copyrightandwebmaster
+theme: islandora_muni
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:copyright_and_webmaster'
+settings:
+  id: 'simple_block:copyright_and_webmaster'
+  label: 'Copyright a správce stránek'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

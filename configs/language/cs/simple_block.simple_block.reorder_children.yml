@@ -1,0 +1,4 @@
+title: 'Upravit pořadí'
+content:
+  value: "<p><a href=\"/node/[current-page:url:args:last]/members/reorder\">Upravit pořadí</a></p>\r\n"
+  format: basic_html

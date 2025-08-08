@@ -1,0 +1,23 @@
+uuid: 32a51ab1-8f1a-4ccf-84b7-3671a28a3295
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - range
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_year_range
+field_name: field_year_range
+entity_type: node
+type: range_integer
+settings: {  }
+module: range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

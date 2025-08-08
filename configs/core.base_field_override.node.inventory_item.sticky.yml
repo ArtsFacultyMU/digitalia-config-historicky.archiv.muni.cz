@@ -1,0 +1,22 @@
+uuid: 236a0262-6287-42ce-9c3e-623878e1dbba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.inventory_item
+id: node.inventory_item.sticky
+field_name: sticky
+entity_type: node
+bundle: inventory_item
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

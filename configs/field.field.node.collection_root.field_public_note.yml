@@ -1,0 +1,19 @@
+uuid: cd9e5b95-61a5-4ddf-b855-79a45bf1bd88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_note
+    - node.type.collection_root
+id: node.collection_root.field_public_note
+field_name: field_public_note
+entity_type: node
+bundle: collection_root
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

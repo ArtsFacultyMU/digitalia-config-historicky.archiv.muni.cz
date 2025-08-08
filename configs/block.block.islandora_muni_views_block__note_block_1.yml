@@ -1,0 +1,46 @@
+uuid: 4cbbcf5b-80da-4a01-999b-d36d85f7bf0d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.note
+  module:
+    - islandora
+    - node
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_views_block__note_block_1
+theme: islandora_muni
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:note-block_1'
+settings:
+  id: 'views_block:note-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection: collection
+      collection_group: collection_group
+      collection_root: collection_root
+      directory: directory
+      fond: fond
+      fond_group: fond_group
+      fond_root: fond_root
+      scan: scan

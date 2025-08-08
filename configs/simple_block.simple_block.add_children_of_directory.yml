@@ -1,0 +1,11 @@
+uuid: d8a63066-a9b6-4e59-af5d-0b337fa13b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: add_children_of_directory
+title: 'Add children of directory'
+content:
+  value: "<p><a href=\"/node/add/directory?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Add directory</a></p>\r\n\r\n<p><a href=\"/node/add/inventory_item?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Add inventory item</a></p>\r\n"
+  format: basic_html

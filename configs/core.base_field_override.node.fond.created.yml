@@ -1,0 +1,18 @@
+uuid: 1a22c7f4-4fd1-4d89-85a0-1fa8057c70a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond
+id: node.fond.created
+field_name: created
+entity_type: node
+bundle: fond
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

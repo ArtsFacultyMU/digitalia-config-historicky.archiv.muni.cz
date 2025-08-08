@@ -1,0 +1,11 @@
+uuid: 7ed68086-be12-4c08-97a0-5681987b92f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: ics_muni_logo
+title: 'ics muni logo'
+content:
+  value: "<p><img alt=\"UVT logo\" data-entity-type=\"file\" data-entity-uuid=\"2d1bb1d7-387f-494d-aed2-119fd7aaa275\" src=\"/themes/custom/islandora_muni/UVT-lg-eng-rgb.png\" /></p>\r\n"
+  format: full_html

@@ -1,0 +1,18 @@
+uuid: 648bd989-359d-497f-b85e-ad4b56d2cc7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+id: node.fond_root.title
+field_name: title
+entity_type: node
+bundle: fond_root
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,64 @@
+uuid: 22faf158-7c03-4595-b6a5-9de308d5daba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.note
+  module:
+    - node
+    - views
+label: 'Public note for inventory item'
+name: public_note_for_inventory_item
+group: Display
+description: 'Display public note block'
+requireAllConditions: false
+disabled: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ac177a78-3038-4b68-9fff-b580e88f92c8
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles: {  }
+reactions:
+  blocks:
+    id: blocks
+    uuid: ab5f4c54-ca8e-4727-a687-09e8f82d201d
+    blocks:
+      eb47ec23-f389-49cb-a4f8-5b3b5815065a:
+        uuid: eb47ec23-f389-49cb-a4f8-5b3b5815065a
+        id: 'views_block:note-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: subfeatures_second
+        custom_id: views_block_note_block_1
+        theme: carapace
+        css_class: ''
+        unique: 0
+        context_id: public_note_for_inventory_item
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      d16e1e6f-6cc9-4ada-9f6c-602548ab4be9:
+        uuid: d16e1e6f-6cc9-4ada-9f6c-602548ab4be9
+        id: 'views_block:note-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: featured_bottom_second
+        weight: '0'
+        custom_id: views_block_note_block_1
+        theme: islandora_muni
+        css_class: ''
+        unique: 0
+        context_id: public_note_for_inventory_item
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0

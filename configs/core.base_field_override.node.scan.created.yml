@@ -1,0 +1,18 @@
+uuid: 894ad7d9-13f8-45ea-b240-f25bd531a7c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+id: node.scan.created
+field_name: created
+entity_type: node
+bundle: scan
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

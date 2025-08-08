@@ -1,0 +1,27 @@
+uuid: 789887df-c9aa-4352-ba9b-b6c0c8204198
+langcode: cs
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: s2wQ3IpHygDpuXkwUxa0Spc4X2nr4QhoFG40T6ZIzkc
+id: islandora_muni_main_menu
+theme: islandora_muni
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '1'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

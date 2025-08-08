@@ -1,0 +1,33 @@
+uuid: 8bffbdc7-21d7-4454-afd6-9545bbe03b4a
+langcode: cs
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - islandora
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: fVKxOLJ47NOS1vOaxYmeFPm6nR8PrKbV9qTMUFQDQzk
+id: islandora_muni_account_menu
+theme: islandora_muni
+region: header
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

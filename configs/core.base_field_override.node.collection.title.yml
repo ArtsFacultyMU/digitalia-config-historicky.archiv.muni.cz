@@ -1,0 +1,18 @@
+uuid: f4716ff3-0728-4db8-b003-9002eb33f16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection
+id: node.collection.title
+field_name: title
+entity_type: node
+bundle: collection
+label: 'Collection name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

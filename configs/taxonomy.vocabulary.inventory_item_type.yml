@@ -1,0 +1,9 @@
+uuid: 47b75cf2-d65b-4f3c-a72e-d3f3d69fb25a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Inventory item type'
+vid: inventory_item_type
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,14 @@
+uuid: 243ed01f-211a-4bb5-9e61-b4bb40707531
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_workbench_ingest.settings
+    - key.key.islandora_workbench_password
+id: islandora_workbench
+label: 'Islandora Workbench'
+config_type: system.simple
+config_prefix: ''
+config_name: digitalia_muni_workbench_ingest.settings
+config_item: drupal_password
+key_id: islandora_workbench_password

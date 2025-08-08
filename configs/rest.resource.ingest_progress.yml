@@ -1,0 +1,23 @@
+uuid: e4bdc337-019a-4500-ac39-998672757898
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - digitalia_muni_workbench_ingest
+    - jwt
+    - serialization
+    - user
+id: ingest_progress
+plugin_id: ingest_progress
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - basic_auth
+    - cookie

@@ -1,0 +1,4 @@
+title: 'Přidat členy kořene fondů'
+content:
+  value: "<p><a href=\"/node/add/fond_group?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Přidat skupinu</a></p>\r\n"
+  format: basic_html

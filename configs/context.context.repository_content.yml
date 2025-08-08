@@ -1,0 +1,58 @@
+uuid: 669aa38a-3e19-4ac2-85bf-e668e257c673
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - node
+  enforced:
+    module: {  }
+_core:
+  default_config_hash: o5KHcnyibXt-7SXqNpNyHTd8qYFOrDh1bk5I4aQo91Y
+label: Content
+name: repository_content
+group: Indexing
+description: 'All repository content'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection: collection
+      collection_group: collection_group
+      collection_root: collection_root
+      directory: directory
+      fond: fond
+      fond_group: fond_group
+      fond_root: fond_root
+      inventory_item: inventory_item
+      islandora_object: islandora_object
+      page: page
+      scan: scan
+      test_content_type: test_content_type
+reactions:
+  index:
+    id: index
+    saved: false
+    actions:
+      index_node_in_fedora: index_node_in_fedora
+      index_node_in_triplestore: index_node_in_triplestore
+  delete:
+    id: delete
+    saved: false
+    actions:
+      delete_node_from_fedora: delete_node_from_fedora
+      delete_node_from_triplestore: delete_node_from_triplestore
+  islandora_map_uri_predicate:
+    id: islandora_map_uri_predicate
+    saved: false
+    drupal_uri_predicate: 'schema:sameAs'
+  alter_jsonld_type:
+    id: alter_jsonld_type
+    saved: false
+    source_field: field_model
+weight: -5

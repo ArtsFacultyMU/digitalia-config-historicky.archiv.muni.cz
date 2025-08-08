@@ -1,0 +1,18 @@
+uuid: 10eb3d5c-bdd6-406b-a59e-a9ca4dd69416
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Directory
+type: directory
+description: 'Inner structure of fond/collection.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

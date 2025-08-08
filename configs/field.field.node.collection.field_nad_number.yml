@@ -1,0 +1,23 @@
+uuid: ee075a85-30a7-4163-981b-ef4ff387e5a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nad_number
+    - node.type.collection
+id: node.collection.field_nad_number
+field_name: field_nad_number
+entity_type: node
+bundle: collection
+label: 'NAD number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

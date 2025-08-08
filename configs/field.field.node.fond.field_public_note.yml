@@ -1,0 +1,19 @@
+uuid: 77e3f472-77ff-4cb0-8114-10e855c1fe0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_note
+    - node.type.fond
+id: node.fond.field_public_note
+field_name: field_public_note
+entity_type: node
+bundle: fond
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

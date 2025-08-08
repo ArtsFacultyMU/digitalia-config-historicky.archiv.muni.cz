@@ -1,0 +1,22 @@
+uuid: 63e02d6a-f18c-463a-aba6-78a92da18454
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: Gq7l77jvlrU7rOGC9cKoBRQWYKF9QYM6hRMOSc_LhEU
+id: islandora_muni_login
+theme: islandora_muni
+region: header
+weight: -3
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: visible
+  provider: user
+visibility: {  }

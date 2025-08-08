@@ -1,0 +1,21 @@
+uuid: f9a8d146-f707-42fd-996b-6e2e61197dca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_range
+    - node.type.inventory_item
+  module:
+    - datetime_range
+id: node.inventory_item.field_time_range
+field_name: field_time_range
+entity_type: node
+bundle: inventory_item
+label: 'Time range'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

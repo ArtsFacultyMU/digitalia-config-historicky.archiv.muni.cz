@@ -1,0 +1,72 @@
+uuid: bb991291-dd6b-4b48-9641-7970b4f382a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_fond_group
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Fond group add children'
+name: fond_group_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: 2af78da2-6a94-4bf4-a547-d42ebf02b621
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8aa30473-4593-4a0d-afdf-bb33874571ea
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      fond_group: fond_group
+reactions:
+  blocks:
+    id: blocks
+    uuid: aa46dcbb-4298-4809-83ab-b15fa0fc42b3
+    blocks:
+      556ac5cb-ba2b-4046-9b7e-7f917755aed1:
+        uuid: 556ac5cb-ba2b-4046-9b7e-7f917755aed1
+        id: 'simple_block:add_children_of_fond_group'
+        label: 'Add children of fond group'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_group
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: fond_group_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      f4ade972-aa0b-4d30-8a6a-17280dc94dab:
+        uuid: f4ade972-aa0b-4d30-8a6a-17280dc94dab
+        id: 'simple_block:add_children_of_fond_group'
+        label: 'Add children of fond group'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_group
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: fond_group_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -13

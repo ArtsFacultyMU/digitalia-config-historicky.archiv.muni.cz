@@ -1,0 +1,22 @@
+uuid: ea1a43d6-b4cf-4eca-a0d4-3a8f407e119f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+id: node.fond_root.promote
+field_name: promote
+entity_type: node
+bundle: fond_root
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

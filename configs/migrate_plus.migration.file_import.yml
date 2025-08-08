@@ -1,0 +1,100 @@
+uuid: 205de71a-a9bc-440d-927a-901204f10f18
+langcode: en
+status: true
+dependencies: {  }
+id: file_import
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - images
+migration_group: archive_mu
+label: 'Import images (as files)'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/web/sites/default/files/scan_upload/import.csv
+  delimiter: ;
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - title
+  fields:
+    -
+      name: title
+      label: Title
+    -
+      name: page_name
+      label: 'Page name'
+    -
+      name: page_number
+      label: 'Page number'
+    -
+      name: page_order
+      label: 'Page order'
+    -
+      name: book
+      label: 'Book name'
+    -
+      name: parent
+      label: 'Parent ID'
+  constants:
+    DRUPAL_FILE_DIRECTORY: 'fedora:/'
+    UPLOAD_FILE_DIRECTORY: 'public://scan_upload/'
+    SCAN_FILE_EXTENSION: .tif
+    ENCODING: UTF-8
+process:
+  book_translit:
+    -
+      plugin: concat
+      source:
+        - book
+        - parent
+      delimiter: _
+    -
+      plugin: service
+      service: transliteration
+      method: transliterate
+    -
+      plugin: str_replace
+      regex: true
+      search: '/\?/'
+      replace: ''
+  scan_filename:
+    -
+      plugin: concat
+      source:
+        - title
+        - constants/SCAN_FILE_EXTENSION
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'Cannot import empty image filename.'
+  scan_destination_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/DRUPAL_FILE_DIRECTORY
+        - '@book_translit'
+        - '@scan_filename'
+  scan_path:
+    -
+      plugin: concat
+      source:
+        - constants/UPLOAD_FILE_DIRECTORY
+        - '@scan_filename'
+  uri:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: '@scan_path'
+    -
+      plugin: file_copy
+      source:
+        - '@scan_path'
+        - '@scan_destination_path'
+      file_exists: replace
+      move: true
+destination:
+  plugin: 'entity:file'
+migration_dependencies: null

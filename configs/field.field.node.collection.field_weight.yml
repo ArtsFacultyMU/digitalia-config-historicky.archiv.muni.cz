@@ -1,0 +1,23 @@
+uuid: 19d950d9-514c-4b66-8ecf-ab2ce23281f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.collection
+id: node.collection.field_weight
+field_name: field_weight
+entity_type: node
+bundle: collection
+label: 'Custom Sort Value'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

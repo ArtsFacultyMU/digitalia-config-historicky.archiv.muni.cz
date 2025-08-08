@@ -1,0 +1,44 @@
+uuid: e0bafaef-be9d-4a6d-8bd3-7f1834824729
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - islandora
+    - system
+    - user
+  theme:
+    - islandora_muni
+id: useraccountmenu
+theme: islandora_muni
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      fedoraadmin: fedoraadmin
+      editor: editor
+      workbench: workbench

@@ -1,0 +1,23 @@
+uuid: d5dea8c2-2450-4aa0-a782-13e6f13d5ec9
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: NhEuwBshcroh3U1BHe8EjztyBE3BzS84L-aEYW-KDxQ
+id: islandora_muni_searchform
+theme: islandora_muni
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

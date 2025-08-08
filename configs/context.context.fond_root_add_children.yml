@@ -1,0 +1,72 @@
+uuid: d635c3f1-449e-47dd-89e6-c91c414e6c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_fond_root
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Fond root add children'
+name: fond_root_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: 1115d636-2c05-4b7d-bf05-a79ff6c88faf
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: dc1b982a-2427-4215-aef6-db581afb6355
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      fond_root: fond_root
+reactions:
+  blocks:
+    id: blocks
+    uuid: c8597a61-ba8f-4890-a7b8-63d18a32b9c1
+    blocks:
+      2527cf88-20f2-46e4-b147-d9fcae833828:
+        uuid: 2527cf88-20f2-46e4-b147-d9fcae833828
+        id: 'simple_block:add_children_of_fond_root'
+        label: 'Add children of fond root'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_root
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: fond_root_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      45772b4b-d9d5-4cb2-b78d-9ed2aa2d55be:
+        uuid: 45772b4b-d9d5-4cb2-b78d-9ed2aa2d55be
+        id: 'simple_block:add_children_of_fond_root'
+        label: 'Add children of fond root'
+        provider: simple_block
+        label_display: '0'
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_fond_root
+        theme: islandora_muni
+        css_class: ''
+        unique: 0
+        context_id: fond_root_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -15

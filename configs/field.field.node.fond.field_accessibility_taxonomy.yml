@@ -1,0 +1,29 @@
+uuid: 46acfb72-d3f1-4011-92b1-307541d2a5a6
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessibility_taxonomy
+    - node.type.fond
+    - taxonomy.vocabulary.accessibility
+id: node.fond.field_accessibility_taxonomy
+field_name: field_accessibility_taxonomy
+entity_type: node
+bundle: fond
+label: Přístupnost
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accessibility: accessibility
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

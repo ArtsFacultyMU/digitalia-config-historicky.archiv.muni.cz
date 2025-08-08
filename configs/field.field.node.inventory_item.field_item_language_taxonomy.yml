@@ -1,0 +1,29 @@
+uuid: 46e9d343-5ec0-4e20-9e46-963f8e6df248
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_language_taxonomy
+    - node.type.inventory_item
+    - taxonomy.vocabulary.language_archive
+id: node.inventory_item.field_item_language_taxonomy
+field_name: field_item_language_taxonomy
+entity_type: node
+bundle: inventory_item
+label: Jazyk
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      language_archive: language_archive
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

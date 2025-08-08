@@ -1,0 +1,4 @@
+title: 'Logo stránek'
+content:
+  value: '<p><a href="/"><img src="/themes/custom/islandora_muni/historicky-archiv-cs.svg" data-entity-type="file" alt="Logo stránek"></a></p>'
+  format: full_html

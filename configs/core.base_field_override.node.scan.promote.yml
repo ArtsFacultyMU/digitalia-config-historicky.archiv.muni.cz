@@ -1,0 +1,22 @@
+uuid: ee4ba3ae-44ac-4a5e-8c74-1978d2fad7b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+id: node.scan.promote
+field_name: promote
+entity_type: node
+bundle: scan
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

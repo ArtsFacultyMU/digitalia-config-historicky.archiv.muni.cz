@@ -1,0 +1,10 @@
+uuid: 5ac584f6-e36b-4b45-81fa-6764378b83a6
+langcode: en
+status: true
+dependencies: {  }
+id: archive_mu
+label: 'Archive MU'
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

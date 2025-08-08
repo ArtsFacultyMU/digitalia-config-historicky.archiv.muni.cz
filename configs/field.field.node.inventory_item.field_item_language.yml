@@ -1,0 +1,21 @@
+uuid: 06f23dcd-5838-4f7f-a1fb-7e495568d73a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_language
+    - node.type.inventory_item
+  module:
+    - options
+id: node.inventory_item.field_item_language
+field_name: field_item_language
+entity_type: node
+bundle: inventory_item
+label: 'Language (old)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

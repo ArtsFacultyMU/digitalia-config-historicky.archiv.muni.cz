@@ -1,0 +1,11 @@
+uuid: e6478991-e3ba-48dd-bbde-cf739e2c45d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: copyright_and_webmaster
+title: 'Copyright and webmaster'
+content:
+  value: "<p>© 2021&nbsp;Masaryk University<br />\r\n<a href=\"mailto:kic_admins@ics.muni.cz\">Webmaster</a></p>\r\n"
+  format: basic_html

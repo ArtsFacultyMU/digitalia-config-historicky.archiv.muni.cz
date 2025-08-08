@@ -1,0 +1,73 @@
+uuid: 45d8b6bd-afa2-44cc-83c6-44482d9da674
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.note
+  module:
+    - node
+    - views
+label: 'Public note'
+name: public_note
+group: Display
+description: 'Display public note block'
+requireAllConditions: false
+disabled: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8fe1a4de-4f0b-4e76-874c-2b7c1e8f7b4b
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection: collection
+      collection_group: collection_group
+      collection_root: collection_root
+      directory: directory
+      fond: fond
+      fond_group: fond_group
+      fond_root: fond_root
+      scan: scan
+reactions:
+  blocks:
+    id: blocks
+    uuid: a9bb5df3-0d41-4d1d-ace9-31d7efff9563
+    blocks:
+      47864824-d18d-4604-a248-d56929db4e2e:
+        uuid: 47864824-d18d-4604-a248-d56929db4e2e
+        id: 'views_block:note-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: views_block_note_block_1
+        theme: carapace
+        css_class: ''
+        unique: 0
+        context_id: public_note
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      ec5319d5-a52e-4c65-8212-0da8c7ff7f4e:
+        uuid: ec5319d5-a52e-4c65-8212-0da8c7ff7f4e
+        id: 'views_block:note-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: views_block_note_block_1
+        theme: islandora_muni
+        css_class: ''
+        unique: 0
+        context_id: public_note
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

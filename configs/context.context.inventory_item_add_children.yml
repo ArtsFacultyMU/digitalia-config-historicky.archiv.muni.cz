@@ -1,0 +1,72 @@
+uuid: e4f93248-ab7d-4c5a-b7b3-1f81c4f61623
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_inventory_item
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Inventory item add children'
+name: inventory_item_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: a11d083d-d63a-4b4b-83b2-3177be0faa19
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 84f5e08a-1359-46bb-b77a-b88330b4dbc8
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item
+reactions:
+  blocks:
+    id: blocks
+    uuid: 1e2575fb-21fd-4fc9-a6bd-15272fade0ae
+    blocks:
+      608d2d5f-b51b-4a5d-9b7d-f259ad824e1d:
+        uuid: 608d2d5f-b51b-4a5d-9b7d-f259ad824e1d
+        id: 'simple_block:add_children_of_inventory_item'
+        label: 'Add children of inventory item'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_inventory_item
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: inventory_item_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      a1d43bab-bee5-4ed8-9cce-eb0cefee7eba:
+        uuid: a1d43bab-bee5-4ed8-9cce-eb0cefee7eba
+        id: 'simple_block:add_children_of_inventory_item'
+        label: 'Add children of inventory item'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_inventory_item
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: inventory_item_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -9

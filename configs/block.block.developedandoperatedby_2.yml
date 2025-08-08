@@ -1,0 +1,28 @@
+uuid: 6e08181e-3cce-4f31-aab5-db695c6a6a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.developed_and_operated_by
+  module:
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: developedandoperatedby_2
+theme: islandora_muni
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:developed_and_operated_by'
+settings:
+  id: 'simple_block:developed_and_operated_by'
+  label: 'Developed and operated by'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

@@ -1,0 +1,62 @@
+panes:
+  left:
+    config:
+      tags:
+        pages:
+          prefix_label: Strana
+          suffix_label: 'z @total'
+          first: '« První strana'
+          previous: '‹ Předchozí strana'
+          next: 'Další strana ›'
+          last: 'Poslední strana »'
+          pageset_empty: 'Žádné strany ke zobrazení.'
+          page_current_title: 'Současná strana'
+          first_title: 'Přejít na první stranu'
+          previous_title: 'Přejít na předchozí stranu'
+          next_title: 'Přejít na následujíci stranu'
+          last_title: 'Přejít na poslední stranu'
+          page_current_reader: 'Současná strana'
+          first_reader: 'První strana'
+          previous_reader: 'Předchozí strana'
+          next_reader: 'Další strana'
+          last_reader: 'Poslední strana'
+          widget_title: 'Vložte hodnotu, poté stiskněte Enter.'
+  center:
+    config:
+      tags:
+        pages:
+          prefix_label: Strana
+          first: '« První strana'
+          previous: '‹ Předchozí strana'
+          next: 'Další strana ›'
+          last: 'Poslední strana »'
+          first_title: 'Jít na první stranu'
+          previous_title: 'Jít na předchozí stranu'
+          next_title: 'Jít na další stranu'
+          last_title: 'Jít na poslední stranu'
+          first_reader: 'První strana'
+          previous_reader: 'Předchozí strana'
+          next_reader: 'Další strana'
+          last_reader: 'Poslední strana'
+          suffix_label: 'z @total'
+          page_title: 'Přejít na stranu @number'
+          page_current_reader: 'Aktuální strana'
+          page_reader: Strana
+  right:
+    config:
+      tags:
+        items:
+          prefix_label: Strana
+          suffix_label: 'z @total_items'
+          pageset_empty: 'Žádné položky ke zobrazení.'
+          page_current_title: Strany
+          first_title: 'Jít na první stranu'
+          previous_title: 'Jít na předchozí stranu'
+          next_title: 'Jít na následující stranu'
+          last_title: 'Jít na poslední stranu'
+          page_current_reader: Strany
+          first_reader: 'První strana'
+          previous_reader: 'Předchozí strana'
+          next_reader: 'Následující strana'
+          last_reader: 'Poslední strana'
+          widget_title: 'Vložte hodnotu, poté stiskněte Enter.'

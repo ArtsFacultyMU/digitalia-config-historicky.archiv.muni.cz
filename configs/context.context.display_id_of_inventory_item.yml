@@ -1,0 +1,76 @@
+uuid: 0d2dfd4b-ea18-43ac-bbaf-6989f9a98c78
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.display_inventory_item_id
+  module:
+    - node
+    - user
+    - views
+label: "Display ID\_of inventory item"
+name: display_id_of_inventory_item
+group: Display
+description: "Displays the ID\_of inventory item node for batch import"
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: 98488291-b891-4c3b-b4d1-5e124cb4b5ad
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d58eb6d0-731d-4222-9c33-f861c5d449d6
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item
+reactions:
+  blocks:
+    id: blocks
+    uuid: 73e24a7d-7eaa-4f75-9de4-0f781e50bfdc
+    blocks:
+      49c249b4-0963-4b8b-81de-f093ecb87828:
+        uuid: 49c249b4-0963-4b8b-81de-f093ecb87828
+        id: 'views_block:display_inventory_item_id-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: views_block_display_inventory_item_id_block_1
+        theme: carapace
+        css_class: ''
+        unique: 0
+        context_id: display_id_of_inventory_item
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: '1'
+        third_party_settings: {  }
+      88ef1ea1-c8e3-4333-9a0f-cce68cdb70f0:
+        uuid: 88ef1ea1-c8e3-4333-9a0f-cce68cdb70f0
+        id: 'views_block:display_inventory_item_id-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: views_block_display_inventory_item_id_block_1
+        theme: islandora_muni
+        css_class: ''
+        unique: 0
+        context_id: display_id_of_inventory_item
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: '1'
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 3

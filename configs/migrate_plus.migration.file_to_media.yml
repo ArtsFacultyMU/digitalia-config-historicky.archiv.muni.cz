@@ -1,0 +1,86 @@
+uuid: 177c5395-600d-4cb2-9374-730a88430056
+langcode: en
+status: true
+dependencies: {  }
+id: file_to_media
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - images
+migration_group: archive_mu
+label: 'Migrate images to media'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/web/sites/default/files/scan_upload/import.csv
+  delimiter: ;
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - title
+  fields:
+    -
+      name: title
+      label: Title
+    -
+      name: page_name
+      label: 'Page name'
+    -
+      name: page_number
+      label: 'Page number'
+    -
+      name: page_order
+      label: 'Page order'
+    -
+      name: book
+      label: 'Book name'
+    -
+      name: parent
+      label: 'Parent ID'
+  constants:
+    SCAN_FILE_EXTENSION: .tif
+process:
+  destination_filename:
+    -
+      plugin: concat
+      source:
+        - title
+        - constants/SCAN_FILE_EXTENSION
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'Cannot import empty filename.'
+  destination_path:
+    -
+      plugin: concat
+      source:
+        - '@destination_filename'
+  name: '@destination_filename'
+  field_media_file:
+    plugin: migration_lookup
+    migration: file_import
+    source: title
+  field_media_of:
+    plugin: migration_lookup
+    migration: scan_import
+    source: title
+  thumbnail/target_id:
+    plugin: migration_lookup
+    migration: file_import
+    source: title
+  uid:
+    -
+      plugin: skip_on_empty
+      method: process
+      message: 'No user for this file.'
+    -
+      plugin: migration_lookup
+      migration: users
+      source: author
+destination:
+  plugin: 'entity:media'
+  default_bundle: file
+migration_dependencies:
+  required:
+    - file_import
+    - scan_import

@@ -1,0 +1,8 @@
+uuid: da40a800-11ba-4714-ac0c-3835bbfdd836
+langcode: cs
+status: true
+dependencies: {  }
+id: czech_short_date
+label: 'Czech short date'
+locked: false
+pattern: 'd. m. Y - H:i'

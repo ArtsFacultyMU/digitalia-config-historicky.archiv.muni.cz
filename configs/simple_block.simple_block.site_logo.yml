@@ -1,0 +1,11 @@
+uuid: f057cb72-e0fd-46d4-9a9d-6eedce6bb9af
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: site_logo
+title: 'Site logo'
+content:
+  value: "<p><a href=\"/\"><img alt=\"Site logo\" data-entity-type=\"file\" src=\"/themes/custom/islandora_muni/historicky-archiv-en.svg\" /></a></p>\r\n"
+  format: full_html

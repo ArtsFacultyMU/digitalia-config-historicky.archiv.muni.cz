@@ -1,0 +1,35 @@
+uuid: 841372f6-c554-4207-8ace-1289391d990f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_range
+    - node.type.fond
+  module:
+    - range
+id: node.fond.field_year_range
+field_name: field_year_range
+entity_type: node
+bundle: fond
+label: 'Time range'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  field:
+    prefix: ''
+    suffix: ''
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+  combined:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

@@ -1,0 +1,22 @@
+uuid: 2e87832d-261b-4b23-81b3-a4d0bcdd0013
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_display
+id: taxonomy_term.islandora_display.status
+field_name: status
+entity_type: taxonomy_term
+bundle: islandora_display
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

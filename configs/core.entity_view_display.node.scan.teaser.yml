@@ -1,0 +1,56 @@
+uuid: fa75e62c-0327-4e3a-9ed1-bb4bf407244d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scan.field_display_hints
+    - field.field.node.scan.field_member_of
+    - field.field.node.scan.field_model
+    - field.field.node.scan.field_page_name
+    - field.field.node.scan.field_page_number
+    - field.field.node.scan.field_public_note
+    - field.field.node.scan.field_weight
+    - node.type.scan
+  module:
+    - user
+id: node.scan.teaser
+targetEntityType: node
+bundle: scan
+mode: teaser
+content:
+  display_media_thumbnail:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_gemini_uri:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  islandora_fits_checksum:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  field_display_hints: true
+  field_member_of: true
+  field_model: true
+  field_page_name: true
+  field_page_number: true
+  field_public_note: true
+  field_weight: true
+  langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
+  search_api_excerpt: true

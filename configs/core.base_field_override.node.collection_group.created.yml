@@ -1,0 +1,18 @@
+uuid: c09d02e9-34b0-44a8-a21b-6a414f7fb0be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection_group
+id: node.collection_group.created
+field_name: created
+entity_type: node
+bundle: collection_group
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

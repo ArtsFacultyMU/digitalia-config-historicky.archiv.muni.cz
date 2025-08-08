@@ -1,0 +1,19 @@
+uuid: a427d330-f092-46b1-8e99-4baadd67bb8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_name
+    - node.type.scan
+id: node.scan.field_page_name
+field_name: field_page_name
+entity_type: node
+bundle: scan
+label: 'Page name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

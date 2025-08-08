@@ -1,0 +1,111 @@
+uuid: 9c732cda-b2ed-4f9c-8fcd-6c217106e574
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fond.field_access
+    - field.field.node.fond.field_accessibility_taxonomy
+    - field.field.node.fond.field_archival_aids
+    - field.field.node.fond.field_footage
+    - field.field.node.fond.field_label
+    - field.field.node.fond.field_member_of
+    - field.field.node.fond.field_model
+    - field.field.node.fond.field_nad_number
+    - field.field.node.fond.field_posteriora
+    - field.field.node.fond.field_priora
+    - field.field.node.fond.field_public_note
+    - field.field.node.fond.field_thematic_description
+    - field.field.node.fond.field_weight
+    - field.field.node.fond.field_year_range
+    - node.type.fond
+  module:
+    - user
+id: node.fond.default
+targetEntityType: node
+bundle: fond
+mode: default
+content:
+  display_media_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  display_media_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  display_media_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  display_media_thumbnail:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_posteriora:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  islandora_fits_checksum:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  openseadragon_media_evas_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  openseadragon_media_evas_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  pdfjs_media_evas_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden:
+  field_access: true
+  field_accessibility_taxonomy: true
+  field_archival_aids: true
+  field_footage: true
+  field_label: true
+  field_member_of: true
+  field_model: true
+  field_nad_number: true
+  field_priora: true
+  field_public_note: true
+  field_thematic_description: true
+  field_weight: true
+  field_year_range: true
+  langcode: true
+  search_api_excerpt: true

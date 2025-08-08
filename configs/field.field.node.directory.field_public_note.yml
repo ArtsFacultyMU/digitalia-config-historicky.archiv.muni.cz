@@ -1,0 +1,19 @@
+uuid: 26f1cac6-e7aa-438f-812a-d04a6f08019c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_note
+    - node.type.directory
+id: node.directory.field_public_note
+field_name: field_public_note
+entity_type: node
+bundle: directory
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

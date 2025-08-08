@@ -1,0 +1,8 @@
+label: 'Dostupné fondy'
+display:
+  default:
+    display_options:
+      title: 'Dostupné fondy'
+      fields:
+        field_group:
+          label: 'Skupina '

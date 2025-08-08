@@ -1,0 +1,18 @@
+uuid: fdf5a39f-6c08-4169-ba71-19b916f07343
+langcode: cs
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.subject
+field_name: subject
+entity_type: comment
+bundle: comment
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

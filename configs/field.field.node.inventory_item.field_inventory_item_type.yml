@@ -1,0 +1,21 @@
+uuid: e49a0b65-03cd-4419-8ad4-84918f791174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inventory_item_type
+    - node.type.inventory_item
+  module:
+    - options
+id: node.inventory_item.field_inventory_item_type
+field_name: field_inventory_item_type
+entity_type: node
+bundle: inventory_item
+label: 'Inventory item type (old)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

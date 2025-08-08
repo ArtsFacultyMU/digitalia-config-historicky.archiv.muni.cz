@@ -1,0 +1,22 @@
+uuid: 2d4494de-9c50-4997-a60a-2c08fd08a0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_group
+id: node.fond_group.status
+field_name: status
+entity_type: node
+bundle: fond_group
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,35 @@
+uuid: bfc1978c-f14d-4d5a-9e02-cdfa515a959f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_use
+    - media.type.image
+    - taxonomy.vocabulary.islandora_media_use
+  content:
+    - 'taxonomy_term:islandora_media_use:e516302d-0633-42a2-afc0-5b5fa8eb4cd8'
+_core:
+  default_config_hash: bfstL81O8B-mDI8L3ueHM8dLjsJt7rTvPJRpEVXXSQ8
+id: media.image.field_media_use
+field_name: field_media_use
+entity_type: media
+bundle: image
+label: 'Media Use'
+description: "Defined by Portland Common Data Model: Use Extension https://pcdm.org/2015/05/12/use. 'Original File' will trigger creation of derivatives."
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: e516302d-0633-42a2-afc0-5b5fa8eb4cd8
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      islandora_media_use: islandora_media_use
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

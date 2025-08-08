@@ -1,0 +1,71 @@
+uuid: 6d53f136-4c79-4877-b234-bbd3171f5a59
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_collection_root
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Collection root add children'
+name: collection_root_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: 93fe606f-22b6-44b3-83f9-1044b6d4e897
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a466c550-c5d7-41ac-8885-4292849b37c7
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection_root: collection_root
+reactions:
+  blocks:
+    id: blocks
+    uuid: 07782725-9181-4759-832a-c9b01be18851
+    blocks:
+      1086666d-1591-4da7-ba69-2cb5f60ca406:
+        uuid: 1086666d-1591-4da7-ba69-2cb5f60ca406
+        id: 'simple_block:add_children_of_collection_root'
+        label: 'Add children of collection root'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_collection_root
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: collection_root_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      073edd76-422e-4061-bfc3-7a9ee99e878b:
+        uuid: 073edd76-422e-4061-bfc3-7a9ee99e878b
+        id: 'simple_block:add_children_of_collection_root'
+        label: 'Add children of collection root'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        custom_id: simple_block_add_children_of_collection_root
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: collection_root_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -14

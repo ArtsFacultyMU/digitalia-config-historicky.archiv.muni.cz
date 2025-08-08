@@ -1,0 +1,14 @@
+uuid: 65fa8f15-1de5-46fc-9bc7-5254d4683185
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.workbench
+  module:
+    - user
+id: user_remove_role_action.workbench
+label: 'Remove the workbench role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: workbench

@@ -1,0 +1,8 @@
+uuid: 964db39e-add0-47ed-aaab-051906ccfc30
+langcode: cs
+status: true
+dependencies: {  }
+id: czech_date_only
+label: 'Czech date only'
+locked: false
+pattern: 'd. m. Y'

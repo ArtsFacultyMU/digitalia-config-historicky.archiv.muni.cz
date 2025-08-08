@@ -1,0 +1,26 @@
+uuid: 405b535b-a7ef-4d30-85d6-1139bd53ce50
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - system
+  theme:
+    - islandora_muni
+id: breadcrumbs
+theme: islandora_muni
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

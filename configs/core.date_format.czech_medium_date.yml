@@ -1,0 +1,8 @@
+uuid: b0d31df4-a45c-40cb-9805-86d7643918ca
+langcode: cs
+status: true
+dependencies: {  }
+id: czech_medium_date
+label: 'Czech medium date'
+locked: false
+pattern: 'D, d. m. Y - H:i'

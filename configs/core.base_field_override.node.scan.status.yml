@@ -1,0 +1,22 @@
+uuid: d65e6ece-14df-4382-9083-b53ecddd8635
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+id: node.scan.status
+field_name: status
+entity_type: node
+bundle: scan
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

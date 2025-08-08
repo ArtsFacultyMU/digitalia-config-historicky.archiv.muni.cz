@@ -1,0 +1,20 @@
+uuid: 5292c640-f655-4cce-992f-5c570745e422
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.inventory_item
+id: node.inventory_item.menu_link
+field_name: menu_link
+entity_type: node
+bundle: inventory_item
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

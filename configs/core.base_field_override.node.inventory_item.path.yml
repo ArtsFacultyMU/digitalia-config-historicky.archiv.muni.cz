@@ -1,0 +1,20 @@
+uuid: 4c274080-a246-411b-87f0-d21d5288fe15
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.inventory_item
+  module:
+    - path
+id: node.inventory_item.path
+field_name: path
+entity_type: node
+bundle: inventory_item
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

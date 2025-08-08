@@ -1,0 +1,28 @@
+uuid: 2c5147d4-46e8-429f-8be6-d37109e8e71c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.collection_group
+    - node.type.collection_root
+id: node.collection_group.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: collection_group
+label: 'Member of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      collection_root: collection_root
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

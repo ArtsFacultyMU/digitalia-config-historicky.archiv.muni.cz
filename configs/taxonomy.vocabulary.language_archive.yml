@@ -1,0 +1,9 @@
+uuid: de7aa102-c341-4fbd-aa99-7d02c9146773
+langcode: en
+status: true
+dependencies: {  }
+name: 'Item language'
+vid: language_archive
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,19 @@
+uuid: 849051c6-3e04-45b1-badc-809e240d8de7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_note
+    - node.type.inventory_item
+id: node.inventory_item.field_public_note
+field_name: field_public_note
+entity_type: node
+bundle: inventory_item
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

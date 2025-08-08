@@ -1,0 +1,20 @@
+uuid: d4624eff-9164-43b2-a0f1-387814490ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+  module:
+    - path
+id: node.fond_root.path
+field_name: path
+entity_type: node
+bundle: fond_root
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

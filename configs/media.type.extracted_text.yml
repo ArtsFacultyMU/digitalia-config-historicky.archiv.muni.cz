@@ -1,0 +1,15 @@
+uuid: a0ddf4f2-35c4-4a33-ac71-43c2959b5ce8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7edmyTt1PdM_GSgH8qEVWCMgJcZj2T8RhJ0gTXI7h90
+id: extracted_text
+label: 'Extracted Text'
+description: 'Text extracted from Images or PDFs'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

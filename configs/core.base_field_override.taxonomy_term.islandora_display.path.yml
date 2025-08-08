@@ -1,0 +1,20 @@
+uuid: ee1a7197-2ea9-41eb-85a3-881363c2769a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_display
+  module:
+    - path
+id: taxonomy_term.islandora_display.path
+field_name: path
+entity_type: taxonomy_term
+bundle: islandora_display
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

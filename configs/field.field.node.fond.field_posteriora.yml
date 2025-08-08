@@ -1,0 +1,19 @@
+uuid: dffeb209-935f-44e1-b30b-e6cd61181559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posteriora
+    - node.type.fond
+id: node.fond.field_posteriora
+field_name: field_posteriora
+entity_type: node
+bundle: fond
+label: Posteriora
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

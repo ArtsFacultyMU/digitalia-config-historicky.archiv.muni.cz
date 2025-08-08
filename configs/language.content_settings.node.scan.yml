@@ -1,0 +1,18 @@
+uuid: 756ee752-7c65-4713-83a8-a0aa6d29335d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.scan
+target_entity_type_id: node
+target_bundle: scan
+default_langcode: current_interface
+language_alterable: true

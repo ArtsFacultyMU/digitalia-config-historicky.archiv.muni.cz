@@ -1,0 +1,23 @@
+uuid: 25c9295f-eac5-4702-beb0-efd2566a8aea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_number
+    - node.type.inventory_item
+id: node.inventory_item.field_book_number
+field_name: field_book_number
+entity_type: node
+bundle: inventory_item
+label: 'Inventory number/book number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

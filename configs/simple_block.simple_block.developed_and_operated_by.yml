@@ -1,0 +1,11 @@
+uuid: 88c90427-469f-478f-a5cd-1400388e7d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: developed_and_operated_by
+title: 'Developed and operated by'
+content:
+  value: "<p>Powered and developed by<br />\r\n<a href=\"https://www.ics.muni.cz/\">Institute of Computer Science</a></p>\r\n"
+  format: basic_html

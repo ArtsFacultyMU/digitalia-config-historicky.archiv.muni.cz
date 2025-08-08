@@ -1,0 +1,72 @@
+uuid: 3e7c2373-cb21-4054-b099-7c4220c6db18
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_medium
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Scan add medium'
+name: scan_add_medium
+group: Display
+description: 'Menu for adding medium to scan'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: 3d627192-5090-414c-9da7-813dd81ebc81
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3e3274cf-2389-4c76-b725-bcfcebd72682
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      scan: scan
+reactions:
+  blocks:
+    id: blocks
+    uuid: 55764211-3c87-40d0-8093-56cb69374485
+    blocks:
+      9cb80c92-8cd8-485a-9902-83fcc4028671:
+        uuid: 9cb80c92-8cd8-485a-9902-83fcc4028671
+        id: 'simple_block:add_medium'
+        label: 'Add medium'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_medium
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: scan_add_medium
+        context_mapping: {  }
+        third_party_settings: {  }
+      e066695f-0c16-41d3-b88e-18d0a8423adb:
+        uuid: e066695f-0c16-41d3-b88e-18d0a8423adb
+        id: 'simple_block:add_medium'
+        label: 'Add medium'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_medium
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: scan_add_medium
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -8

@@ -1,0 +1,18 @@
+uuid: 0e19e72d-34ba-459a-9f7e-7bdb6bea9bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection_root
+id: node.collection_root.changed
+field_name: changed
+entity_type: node
+bundle: collection_root
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

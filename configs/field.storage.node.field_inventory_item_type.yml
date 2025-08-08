@@ -1,0 +1,124 @@
+uuid: 28b32c81-81e3-406d-82aa-ee0ed1076672
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_inventory_item_type
+field_name: field_inventory_item_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: charter_prior_to_1850
+      label: 'Listina do roku 1850'
+    -
+      value: charter_after_1850
+      label: 'Listina po roce 1850'
+    -
+      value: official_book
+      label: 'Úřední kniha'
+    -
+      value: manuscript
+      label: Rukopis
+    -
+      value: filing_protocol
+      label: 'Podací protokol'
+    -
+      value: filing_diary
+      label: 'Podací deník'
+    -
+      value: index
+      label: Index
+    -
+      value: elench
+      label: Elench
+    -
+      value: repertoire
+      label: Repertář
+    -
+      value: card_file
+      label: Kartotéka
+    -
+      value: seal
+      label: Pečetidlo
+    -
+      value: stamp
+      label: Razítko
+    -
+      value: separate_seal
+      label: 'Samostatná pečeť'
+    -
+      value: seal_casting
+      label: 'Odlitek pečeti'
+    -
+      value: map
+      label: Mapa
+    -
+      value: atlas
+      label: Atlas
+    -
+      value: technical_drawing
+      label: 'Technický výkres'
+    -
+      value: graphic_sheet
+      label: ''
+    -
+      value: drawing
+      label: 'Grafický list'
+    -
+      value: photo_on_a_paper_mat
+      label: 'Fotografie na papírové podložce'
+    -
+      value: photographic_plate
+      label: 'Fotografická deska'
+    -
+      value: sheet_film
+      label: 'Listový film'
+    -
+      value: roll_film
+      label: 'Svitkový film'
+    -
+      value: film_stock
+      label: Kinofilm
+    -
+      value: microfilm
+      label: Mikrofilm
+    -
+      value: photo_album
+      label: Fotoalbum
+    -
+      value: digital_photo
+      label: 'Digitální fotografie'
+    -
+      value: print_prior_to_1800
+      label: 'Tisk do roku 1800'
+    -
+      value: print_after_1800
+      label: 'Tisk po roce 1800'
+    -
+      value: postcard
+      label: Pohlednice
+    -
+      value: poster
+      label: Plakát
+    -
+      value: other
+      label: Jiné
+    -
+      value: object_of_numismatic_nature
+      label: 'Předmět numismatické povahy'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

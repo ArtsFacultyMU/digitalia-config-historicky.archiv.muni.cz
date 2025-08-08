@@ -1,0 +1,19 @@
+uuid: e60d4c16-ba30-4d9f-893d-7517dcbae3aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footage
+    - node.type.collection
+id: node.collection.field_footage
+field_name: field_footage
+entity_type: node
+bundle: collection
+label: Footage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

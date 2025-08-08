@@ -1,0 +1,35 @@
+uuid: bf675f88-4206-467e-877f-bf8661cd8b41
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.available_fonds
+  module:
+    - islandora
+    - system
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_views_block__available_fonds_block_1
+theme: islandora_muni
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:available_fonds-block_1'
+settings:
+  id: 'views_block:available_fonds-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: /help

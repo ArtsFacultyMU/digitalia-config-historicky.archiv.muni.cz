@@ -1,0 +1,24 @@
+uuid: 2776adf1-f19c-4111-9f20-658dd8d4f42a
+langcode: en
+status: true
+dependencies: {  }
+id: editor_fedora
+label: 'Editor fedora'
+description: ''
+conf:
+  extensions: ''
+  maxsize: null
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  folders:
+    -
+      path: .
+      permissions:
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true

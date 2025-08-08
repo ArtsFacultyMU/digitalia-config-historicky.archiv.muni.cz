@@ -1,0 +1,49 @@
+uuid: 34293c96-b97c-486a-b65e-e59e629f35a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - node
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: cYnt85jUVmE2jra0yDIbIx2sS8h0YOUikv8lqvONN8E
+id: islandora_muni_page_title
+theme: islandora_muni
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/*\r\n/user/*\r\n<front>"
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection: collection
+      collection_group: collection_group
+      collection_root: collection_root
+      directory: directory
+      fond: fond
+      fond_group: fond_group
+      fond_root: fond_root
+      inventory_item: inventory_item
+      scan: scan

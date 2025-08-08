@@ -1,0 +1,23 @@
+uuid: 04ea50e8-c454-4c97-82b7-e0060f34be92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nad_number
+    - node.type.fond
+id: node.fond.field_nad_number
+field_name: field_nad_number
+entity_type: node
+bundle: fond
+label: 'Číslo NAD'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

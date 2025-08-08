@@ -1,0 +1,33 @@
+uuid: 93776e1b-56a3-42f0-aea2-13abb8343086
+langcode: en
+status: false
+dependencies:
+  module:
+    - islandora
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: gJIY1Qtuq8yxK8coDyscLxO4RW7IagOmVBkXy6PR2Vc
+id: islandora_muni_breadcrumbs
+theme: islandora_muni
+region: header
+weight: -2
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Drobečková navigace'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/about\r\n/help"
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

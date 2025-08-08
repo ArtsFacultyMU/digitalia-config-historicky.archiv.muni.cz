@@ -1,0 +1,37 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Vyhledat
+          reset_button_label: 'Vymazat filtry'
+          exposed_sorts_label: 'Seřadit podle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Počet položek na stránku'
+            items_per_page_options_all_label: '- Všechny -'
+            offset_label: Odsazení
+          tags:
+            first: '« První strana'
+            last: 'Poslední strana »'
+      filters:
+        type:
+          expose:
+            label: Typ
+        title:
+          expose:
+            label: Název
+        field_item_language_value:
+          expose:
+            label: Jazyk
+        field_access_value:
+          expose:
+            label: Přístupnost
+        field_inventory_item_type_value:
+          expose:
+            label: 'Typ inventární jednotky'
+  page_1:
+    display_title: Strana

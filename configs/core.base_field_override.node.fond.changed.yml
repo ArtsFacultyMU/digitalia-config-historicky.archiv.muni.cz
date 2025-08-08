@@ -1,0 +1,18 @@
+uuid: e034e09e-6c91-419b-96ba-14802f25533d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond
+id: node.fond.changed
+field_name: changed
+entity_type: node
+bundle: fond
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 00780319-55da-42cb-9844-32493dae7f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond_root
+id: node.fond_root.status
+field_name: status
+entity_type: node
+bundle: fond_root
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

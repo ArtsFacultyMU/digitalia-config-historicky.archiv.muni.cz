@@ -1,0 +1,11 @@
+uuid: a7cab956-51e8-4e91-baa9-c75c4bc088e4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pVJnB7MAcLfehjyrC7yJfLKSVlZylkQvpVoAsjuCxuE
+name: Frequency
+vid: frequencies
+description: 'Terms to express publication frequency'
+weight: 0
+new_revision: false

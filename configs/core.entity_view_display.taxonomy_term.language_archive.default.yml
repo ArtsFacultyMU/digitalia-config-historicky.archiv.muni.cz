@@ -1,0 +1,23 @@
+uuid: 91954e3c-0406-4af6-8942-c1eca7afadd4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.language_archive
+  module:
+    - text
+id: taxonomy_term.language_archive.default
+targetEntityType: taxonomy_term
+bundle: language_archive
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

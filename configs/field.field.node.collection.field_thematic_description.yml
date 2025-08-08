@@ -1,0 +1,19 @@
+uuid: 0db2826c-e2f0-4d18-a62e-06633ad34add
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematic_description
+    - node.type.collection
+id: node.collection.field_thematic_description
+field_name: field_thematic_description
+entity_type: node
+bundle: collection
+label: 'Thematic description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

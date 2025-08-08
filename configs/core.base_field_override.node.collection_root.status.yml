@@ -1,0 +1,22 @@
+uuid: 4435d39c-1817-4f89-889b-27997f9e4ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection_root
+id: node.collection_root.status
+field_name: status
+entity_type: node
+bundle: collection_root
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

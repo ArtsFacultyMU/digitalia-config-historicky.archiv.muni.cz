@@ -1,0 +1,11 @@
+uuid: 58244419-c638-4ab3-b165-d7a4bb922be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: status_of_current_ingest
+title: 'Status of current ingest'
+content:
+  value: "<div class=\"ingest-progress\"><p>Ingest status:&nbsp;<script type=\"module\">\r\n                                                            const response = await fetch(\"/digitalia_muni_workbench_ingest/ingest_progress\");\r\n                                                            const json = await response.json();\r\n                                                            let element = document.querySelector(\"div.ingest-progress p\");\r\n                                                            element.innerText += json.status;\r\n                                                            if (json.status != \"done\") {\r\n                                                              element.innerText += \", \" +\_json.percentage + \" %\";\r\n                                                            }\r\n                                                            </script></p></div>"
+  format: full_html

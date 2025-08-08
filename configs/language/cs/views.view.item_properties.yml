@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      title: 'Vlastnosti položky'
+      fields:
+        title:
+          label: Název
+        field_group:
+          label: Skupina
+        field_label:
+          label: 'Značka fondu'
+        field_nad_number_value:
+          label: 'Číslo NAD'
+        field_time_range:
+          label: 'Časový rozsah'
+        field_footage:
+          label: Metráž
+        field_thematic_description:
+          label: 'Tematický popis'
+        field_archival_aids:
+          label: 'Archivní pomůcky'
+        field_book_number_value:
+          label: 'Inventární číslo/číslo knihy'
+        field_accessibility_taxonomy:
+          label: Přístupnost
+        field_item_type_taxonomy:
+          label: 'Typ evidenční jednotky'
+        field_item_language_taxonomy:
+          label: Jazyk
+        field_year_range:
+          label: 'Časový rozsah'

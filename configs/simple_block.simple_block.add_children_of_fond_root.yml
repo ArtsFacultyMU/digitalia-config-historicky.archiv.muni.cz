@@ -1,0 +1,11 @@
+uuid: ce1fe05c-3b03-424e-a219-d0d0e0b1e06f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: add_children_of_fond_root
+title: 'Add children of fond root'
+content:
+  value: "<p><a href=\"/node/add/fond_group?edit%5Bfield_member_of%5D%5Bwidget%5D%5B0%5D%5Btarget_id%5D=[current-page:url:args:last]\">Add group</a></p>\r\n"
+  format: basic_html

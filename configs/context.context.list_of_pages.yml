@@ -1,0 +1,71 @@
+uuid: a793d4e0-cc06-4669-bd70-ede733ec0516
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.inventory_item_view
+  module:
+    - islandora
+    - node
+    - views
+label: 'List of pages'
+name: list_of_pages
+group: Display
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a9bbff0f-4a50-4f50-8f3d-a9b457040d93
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item
+reactions:
+  blocks:
+    id: blocks
+    uuid: cb77cc2b-f638-40ac-9eae-4eb600d235f0
+    blocks:
+      653bc509-e7c4-4547-b659-7b50430e440c:
+        uuid: 653bc509-e7c4-4547-b659-7b50430e440c
+        id: 'views_block:inventory_item_view-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: views_block_inventory_item_view_block_1
+        theme: carapace
+        css_class: remove_title
+        unique: 0
+        context_id: list_of_pages
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      4047e634-c351-4fb7-b00a-cd646ba7a41b:
+        uuid: 4047e634-c351-4fb7-b00a-cd646ba7a41b
+        id: 'views_block:inventory_item_view-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: views_block_inventory_item_view_block_1
+        theme: islandora_muni
+        css_class: remove_title
+        unique: 0
+        context_id: list_of_pages
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+  view_mode_alter:
+    id: view_mode_alter
+    saved: false
+    mode: media.full
+weight: -5

@@ -1,0 +1,9 @@
+uuid: c2e1137f-06e0-42f6-aaa7-e98968046545
+langcode: en
+status: true
+dependencies: {  }
+name: Accessibility
+vid: accessibility
+description: null
+weight: 0
+new_revision: false

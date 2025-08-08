@@ -1,0 +1,72 @@
+uuid: 09dfcfb4-b554-45d5-90d2-4a903844bd3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_directory
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Directory add children'
+name: directory_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: b7e29b03-96a2-4edb-a5de-a81685fd4631
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 06646208-d9ec-4836-b377-880792fc3463
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      directory: directory
+reactions:
+  blocks:
+    id: blocks
+    uuid: a29d602b-0c41-4a05-b2ca-e89f50191f24
+    blocks:
+      30dc34eb-1c84-47fb-8d02-bee98dfd1e6d:
+        uuid: 30dc34eb-1c84-47fb-8d02-bee98dfd1e6d
+        id: 'simple_block:add_children_of_directory'
+        label: 'Add children of directory'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_directory
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: directory_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      5dbb8b69-1d36-4c0b-8c59-f8c29ab057fc:
+        uuid: 5dbb8b69-1d36-4c0b-8c59-f8c29ab057fc
+        id: 'simple_block:add_children_of_directory'
+        label: 'Add children of directory'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_directory
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: directory_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -10

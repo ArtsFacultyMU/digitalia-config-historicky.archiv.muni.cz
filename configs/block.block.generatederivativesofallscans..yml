@@ -1,0 +1,43 @@
+uuid: 122c0977-2903-49ad-81c2-217945e1a996
+langcode: en
+status: true
+dependencies:
+  module:
+    - archive_generate_derivatives_block
+    - islandora
+    - node
+    - user
+  theme:
+    - islandora_muni
+id: generatederivativesofallscans.
+theme: islandora_muni
+region: sidebar_second
+weight: 0
+provider: null
+plugin: archive_generate_derivatives_block
+settings:
+  id: archive_generate_derivatives_block
+  label: 'Generate derivatives of all scans.'
+  label_display: '0'
+  provider: archive_generate_derivatives_block
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item

@@ -1,0 +1,31 @@
+uuid: b658219e-f53c-47d4-bb27-1f52cd473d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.directory
+    - node.type.collection
+    - node.type.fond
+id: node.directory.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: directory
+label: 'Member of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      directory: directory
+      fond: fond
+      collection: collection
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: fond
+field_type: entity_reference

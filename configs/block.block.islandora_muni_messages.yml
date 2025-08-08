@@ -1,0 +1,22 @@
+uuid: 5af13f37-b073-47c2-89ec-5706bbf00888
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: hOgpsX-rP7PNKIrvNALf-OwR8JFbDFGhSrY6G0Ebg8s
+id: islandora_muni_messages
+theme: islandora_muni
+region: highlighted
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

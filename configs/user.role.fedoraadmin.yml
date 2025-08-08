@@ -1,0 +1,16 @@
+uuid: 8a64c4d1-467f-40bb-a376-7ccc234487bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - flysystem
+_core:
+  default_config_hash: e6W733rBSNmewsIQsvWQ-8mIE5H-CIeArLBwIbN5vVQ
+id: fedoraadmin
+label: fedoraAdmin
+weight: 3
+is_admin: null
+permissions:
+  - 'administer flysystem'
+  - 'delete own files'

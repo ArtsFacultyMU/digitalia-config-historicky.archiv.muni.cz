@@ -1,0 +1,35 @@
+uuid: 627fbe97-a67d-4e46-b5aa-d5139a04ee91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_range
+    - node.type.collection
+  module:
+    - range
+id: node.collection.field_year_range
+field_name: field_year_range
+entity_type: node
+bundle: collection
+label: 'Time range'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  field:
+    prefix: ''
+    suffix: ''
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+  combined:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

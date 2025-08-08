@@ -1,0 +1,16 @@
+uuid: bbe98d42-968b-4aeb-876e-6459d3d1badb
+langcode: cs
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.language_archive
+id: taxonomy_term.language_archive.token
+targetEntityType: taxonomy_term
+bundle: language_archive
+mode: token
+content: {  }
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

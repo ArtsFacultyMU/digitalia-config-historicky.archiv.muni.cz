@@ -1,0 +1,18 @@
+uuid: 6b16cd38-a5b0-4cc0-84fc-f6cf97475e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.inventory_item
+id: node.inventory_item.created
+field_name: created
+entity_type: node
+bundle: inventory_item
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

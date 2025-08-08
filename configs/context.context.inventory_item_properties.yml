@@ -1,0 +1,66 @@
+uuid: 124a08c4-3d6e-4110-b163-5fc6e32d6413
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.item_properties
+  module:
+    - node
+    - views
+label: 'Inventory item properties'
+name: inventory_item_properties
+group: Display
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bc06ea51-26f3-4313-877e-4d660e072428
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item
+reactions:
+  blocks:
+    id: blocks
+    uuid: da21766b-7b68-4aca-b47b-5d9289ed8f87
+    blocks:
+      fc9f0422-e3ff-43d3-9d0f-3904873f6cb9:
+        uuid: fc9f0422-e3ff-43d3-9d0f-3904873f6cb9
+        id: 'views_block:item_properties-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: subfeatures_first
+        weight: '0'
+        custom_id: views_block_item_properties_block_1
+        theme: carapace
+        css_class: ''
+        unique: 0
+        context_id: inventory_item_properties
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      736cb735-acb1-46ff-9b6a-c785cc30fc07:
+        uuid: 736cb735-acb1-46ff-9b6a-c785cc30fc07
+        id: 'views_block:item_properties-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        region: featured_bottom_first
+        weight: '0'
+        custom_id: views_block_item_properties_block_1
+        theme: islandora_muni
+        css_class: ''
+        unique: 0
+        context_id: inventory_item_properties
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -1

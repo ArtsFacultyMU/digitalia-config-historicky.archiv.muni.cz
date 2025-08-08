@@ -1,0 +1,19 @@
+uuid: d7d061e2-63a9-4720-a5bf-2018fa922781
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public_note
+    - node.type.scan
+id: node.scan.field_public_note
+field_name: field_public_note
+entity_type: node
+bundle: scan
+label: Note
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

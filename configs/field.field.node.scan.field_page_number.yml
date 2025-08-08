@@ -1,0 +1,19 @@
+uuid: 09b922ac-169c-45c4-9a5b-f9a5a01aafdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_number
+    - node.type.scan
+id: node.scan.field_page_number
+field_name: field_page_number
+entity_type: node
+bundle: scan
+label: 'Page number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

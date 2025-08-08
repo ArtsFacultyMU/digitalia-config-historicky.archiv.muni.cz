@@ -1,0 +1,23 @@
+uuid: ad2dc1b0-f99c-4e6c-a732-456f987da916
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.scan
+id: node.scan.field_weight
+field_name: field_weight
+entity_type: node
+bundle: scan
+label: 'Custom Sort Value'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

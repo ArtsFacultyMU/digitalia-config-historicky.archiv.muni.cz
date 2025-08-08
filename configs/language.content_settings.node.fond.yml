@@ -1,0 +1,18 @@
+uuid: 5e5c2552-1891-48cd-b487-0595f3a1da2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.fond
+target_entity_type_id: node
+target_bundle: fond
+default_langcode: current_interface
+language_alterable: true

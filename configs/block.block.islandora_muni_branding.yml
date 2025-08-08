@@ -1,0 +1,39 @@
+uuid: 9eb84efd-f9dd-4ad9-a24d-119b53acc5c2
+langcode: en
+status: false
+dependencies:
+  module:
+    - islandora
+    - language
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: pXTMmY3T3W2t5JfxrB5UEmrwCFKWQZ5u_rnz1CfcfnQ
+id: islandora_muni_branding
+theme: islandora_muni
+region: header
+weight: 1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

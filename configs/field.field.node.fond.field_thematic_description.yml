@@ -1,0 +1,19 @@
+uuid: 4e9a99d3-63cf-4034-9a7e-8748e6c2249c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematic_description
+    - node.type.fond
+id: node.fond.field_thematic_description
+field_name: field_thematic_description
+entity_type: node
+bundle: fond
+label: 'Thematic description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

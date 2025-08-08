@@ -1,0 +1,72 @@
+uuid: 54a30f96-c927-47bc-9862-58a5bac6a722
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_collection_group
+  module:
+    - node
+    - simple_block
+    - user
+label: 'Collection group add children'
+name: collection_group_add_children
+group: Display
+description: 'Menu for adding children'
+requireAllConditions: true
+disabled: false
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    uuid: cc9829e0-3d54-49b5-a7e5-2e1a99bc7ddc
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 81ca8130-b4fa-4d18-8ef4-a5b6be6e2597
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      collection_group: collection_group
+reactions:
+  blocks:
+    id: blocks
+    uuid: 43fde788-d2a3-46ec-b8e1-358d15112592
+    blocks:
+      baa8bcac-0753-4a5c-bdae-a965c7508770:
+        uuid: baa8bcac-0753-4a5c-bdae-a965c7508770
+        id: 'simple_block:add_children_of_collection_group'
+        label: 'Add children of collection group'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_collection_group
+        theme: carapace
+        css_class: hide_title
+        unique: 0
+        context_id: collection_group_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+      f8173643-3835-473e-805a-fc1730266e17:
+        uuid: f8173643-3835-473e-805a-fc1730266e17
+        id: 'simple_block:add_children_of_collection_group'
+        label: 'Add children of collection group'
+        provider: simple_block
+        label_display: visible
+        region: sidebar_second
+        weight: '0'
+        custom_id: simple_block_add_children_of_collection_group
+        theme: islandora_muni
+        css_class: hide_title
+        unique: 0
+        context_id: collection_group_add_children
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -12

@@ -1,0 +1,29 @@
+uuid: 4d0090a3-50f9-4233-8d23-02edf2a136dc
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessibility_taxonomy
+    - node.type.collection
+    - taxonomy.vocabulary.accessibility
+id: node.collection.field_accessibility_taxonomy
+field_name: field_accessibility_taxonomy
+entity_type: node
+bundle: collection
+label: Přístupnost
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accessibility: accessibility
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

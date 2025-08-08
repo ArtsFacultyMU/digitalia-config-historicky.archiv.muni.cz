@@ -1,0 +1,8 @@
+uuid: de72677c-5476-44e6-9fbf-7f1fa294d90c
+langcode: cs
+status: true
+dependencies: {  }
+id: czech_long_date
+label: 'Czech long date'
+locked: false
+pattern: 'l, j. F Y - H:i'

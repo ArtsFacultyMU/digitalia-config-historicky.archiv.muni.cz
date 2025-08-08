@@ -1,0 +1,20 @@
+uuid: 77518917-c352-42d8-80f0-81fc65407f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+  module:
+    - path
+id: node.scan.path
+field_name: path
+entity_type: node
+bundle: scan
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

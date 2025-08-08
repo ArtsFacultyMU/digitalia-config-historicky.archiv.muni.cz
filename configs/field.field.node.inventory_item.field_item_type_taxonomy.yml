@@ -1,0 +1,29 @@
+uuid: cd8b3c6f-b12c-4e76-9755-64646cb4db28
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_type_taxonomy
+    - node.type.inventory_item
+    - taxonomy.vocabulary.inventory_item_type
+id: node.inventory_item.field_item_type_taxonomy
+field_name: field_item_type_taxonomy
+entity_type: node
+bundle: inventory_item
+label: 'Typ inventární jednotky'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      inventory_item_type: inventory_item_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

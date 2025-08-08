@@ -1,0 +1,23 @@
+uuid: ca3b9754-0ead-455b-a6c4-282e6a9e208b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.directory
+id: node.directory.field_weight
+field_name: field_weight
+entity_type: node
+bundle: directory
+label: 'Custom Sort Value'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,20 @@
+uuid: 66975cc8-7aae-48c6-89ba-80fb5d99acb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collection_root
+  module:
+    - path
+id: node.collection_root.path
+field_name: path
+entity_type: node
+bundle: collection_root
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,62 @@
+settings:
+  allowed_values:
+    0:
+      label: 'Listina do roku 1850'
+    1:
+      label: 'Listina po roce 1850'
+    2:
+      label: 'Úřední kniha'
+    3:
+      label: Rukopis
+    4:
+      label: 'Podací protokol'
+    5:
+      label: 'Podací deník'
+    8:
+      label: Repertář
+    9:
+      label: Kartotéka
+    10:
+      label: Pečetidlo
+    11:
+      label: Razítko
+    12:
+      label: 'Samostatná pečeť'
+    13:
+      label: 'Odlitek pečeti'
+    14:
+      label: Mapa
+    16:
+      label: 'Technický výkres'
+    17:
+      label: ''
+    18:
+      label: 'Grafický list'
+    19:
+      label: 'Fotografie na papírové podložce'
+    20:
+      label: 'Fotografická deska'
+    21:
+      label: 'Listový film'
+    22:
+      label: 'Svitkový film'
+    23:
+      label: Kinofilm
+    24:
+      label: Mikrofilm
+    25:
+      label: Fotoalbum
+    26:
+      label: 'Digitální fotografie'
+    27:
+      label: 'Tisk do roku 1800'
+    28:
+      label: 'Tisk po roce 1800'
+    29:
+      label: Pohlednice
+    30:
+      label: Plakát
+    31:
+      label: Jiné
+    32:
+      label: 'Předmět numismatické povahy'

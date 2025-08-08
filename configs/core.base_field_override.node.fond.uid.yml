@@ -1,0 +1,20 @@
+uuid: 52ffe95a-77b3-4655-8617-108c29f5c0c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fond
+id: node.fond.uid
+field_name: uid
+entity_type: node
+bundle: fond
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

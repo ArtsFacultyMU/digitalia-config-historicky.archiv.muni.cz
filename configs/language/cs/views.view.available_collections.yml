@@ -1,0 +1,8 @@
+label: 'Dostupné sbírky'
+display:
+  default:
+    display_options:
+      title: 'Dostupné sbírky'
+      fields:
+        field_group:
+          label: 'Skupina '
