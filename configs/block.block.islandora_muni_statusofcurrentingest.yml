@@ -1,6 +1,6 @@
 uuid: b721590d-8a4e-4951-855f-ba118f3bee14
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - simple_block.simple_block.status_of_current_ingest
@@ -13,7 +13,7 @@ dependencies:
 id: islandora_muni_statusofcurrentingest
 theme: islandora_muni
 region: featured_bottom_first
-weight: 0
+weight: -23
 provider: null
 plugin: 'simple_block:status_of_current_ingest'
 settings:

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.open_seadragon
     - field.field.node.scan.field_display_hints
+    - field.field.node.scan.field_index_letter
     - field.field.node.scan.field_member_of
     - field.field.node.scan.field_model
     - field.field.node.scan.field_page_name
@@ -30,11 +31,13 @@ content:
     weight: 0
     region: content
 hidden:
+  dev_scan_link_to_parent_entity_view_1: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_display_hints: true
+  field_index_letter: true
   field_member_of: true
   field_model: true
   field_page_name: true
@@ -49,4 +52,5 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
+  scan_link_to_parent_entity_view_1: true
   search_api_excerpt: true

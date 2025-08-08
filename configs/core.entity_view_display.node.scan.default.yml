@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.scan.field_display_hints
+    - field.field.node.scan.field_index_letter
     - field.field.node.scan.field_member_of
     - field.field.node.scan.field_model
     - field.field.node.scan.field_page_name
@@ -18,78 +19,76 @@ targetEntityType: node
 bundle: scan
 mode: default
 content:
-  display_media_entity_view_1:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  display_media_entity_view_2:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  display_media_service_file:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  display_media_thumbnail:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_gemini_uri:
     settings: {  }
     third_party_settings: {  }
     weight: 12
     region: content
-  islandora_fits_checksum:
-    settings: {  }
+  field_index_letter:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 3
     region: content
-  links:
-    settings: {  }
+  field_page_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 2
     region: content
-  openseadragon_media_evas_entity_view_1:
-    settings: {  }
+  field_page_number:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 4
     region: content
-  openseadragon_media_evas_entity_view_2:
+  field_public_note:
+    type: basic_string
+    label: inline
     settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_weight:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
     third_party_settings: {  }
     weight: 5
     region: content
   openseadragon_media_evas_service_file:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 1
     region: content
-  pdfjs_media_evas_entity_view_1:
+  scan_link_to_parent_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 7
-    region: content
-  pdfjs_media_evas_entity_view_2:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 8
-    region: content
-  pdfjs_media_evas_service_file:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 9
+    weight: 0
     region: content
 hidden:
+  dev_scan_link_to_parent_entity_view_1: true
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
   field_display_hints: true
   field_member_of: true
   field_model: true
-  field_page_name: true
-  field_page_number: true
-  field_public_note: true
-  field_weight: true
+  islandora_fits_checksum: true
   langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
   search_api_excerpt: true

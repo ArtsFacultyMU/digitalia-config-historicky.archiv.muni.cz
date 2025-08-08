@@ -11,7 +11,7 @@ _core:
 id: islandora_muni_help
 theme: islandora_muni
 region: content
-weight: -13
+weight: -23
 provider: null
 plugin: help_block
 settings:

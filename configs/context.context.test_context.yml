@@ -1,0 +1,24 @@
+uuid: 93b879f5-e18f-4c5e-a9d7-05f10f9ceb46
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+label: 'TEST context'
+name: test_context
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_domain:
+    id: request_domain
+    negate: false
+    uuid: 9c74a6fc-4c1e-4a6d-9d0f-ae02c7150c05
+    domains: ''
+reactions:
+  view_mode_alter:
+    id: view_mode_alter
+    uuid: 190d2e87-824f-47cd-ac80-f72a313a3600
+    saved: false
+weight: 0

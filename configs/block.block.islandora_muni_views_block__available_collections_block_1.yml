@@ -13,7 +13,7 @@ dependencies:
 id: islandora_muni_views_block__available_collections_block_1
 theme: islandora_muni
 region: content
-weight: -9
+weight: -19
 provider: null
 plugin: 'views_block:available_collections-block_1'
 settings:

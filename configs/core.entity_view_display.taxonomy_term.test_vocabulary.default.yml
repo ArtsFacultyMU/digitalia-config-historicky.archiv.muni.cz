@@ -1,0 +1,32 @@
+uuid: 1b082873-d668-43d8-acee-b8e3d6583fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.test_vocabulary.field_test_text_field
+    - taxonomy.vocabulary.test_vocabulary
+  module:
+    - text
+id: taxonomy_term.test_vocabulary.default
+targetEntityType: taxonomy_term
+bundle: test_vocabulary
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_test_text_field:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

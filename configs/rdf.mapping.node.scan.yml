@@ -1,0 +1,27 @@
+uuid: 24235363-0851-4206-9cc2-baafc71e05ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.scan
+  module:
+    - node
+id: node.scan
+targetEntityType: node
+bundle: scan
+types:
+  - 'pcdm:Object'
+fieldMappings:
+  title:
+    properties:
+      - 'dc:title'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel
+  field_member_of:
+    properties:
+      - 'pcdm:memberOf'
+  field_alt_title:
+    properties:
+      - 'dcterms:alternative'

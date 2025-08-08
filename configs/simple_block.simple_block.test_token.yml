@@ -1,0 +1,11 @@
+uuid: e0217255-598d-4349-8e1d-9a3776e1d5d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: test_token
+title: 'TEST token'
+content:
+  value: '<p>[node:nid]</p>'
+  format: full_html

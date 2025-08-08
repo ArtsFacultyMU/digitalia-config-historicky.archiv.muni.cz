@@ -1,6 +1,6 @@
 uuid: 29c29d21-c217-4902-a5bb-ff046d1ef10a
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - islandora
@@ -10,7 +10,7 @@ dependencies:
 id: islandora_muni_languageswitcher
 theme: islandora_muni
 region: header
-weight: -10
+weight: -18
 provider: null
 plugin: 'language_block:language_interface'
 settings:

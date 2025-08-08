@@ -1,0 +1,26 @@
+uuid: a63a5604-df75-4cb5-9587-e5aea6d29bef
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - language
+  theme:
+    - islandora_muni
+id: languageswitcher_2
+theme: islandora_muni
+region: header
+weight: -21
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

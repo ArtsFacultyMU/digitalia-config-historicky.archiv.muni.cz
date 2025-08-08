@@ -23,6 +23,11 @@ targetEntityType: node
 bundle: inventory_item
 mode: token
 content:
+  dev_paged_title_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_gemini_uri:
     settings: {  }
     third_party_settings: {  }

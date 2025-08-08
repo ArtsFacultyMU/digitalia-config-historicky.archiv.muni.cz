@@ -12,7 +12,7 @@ _core:
 id: islandora_muni_breadcrumbs
 theme: islandora_muni
 region: header
-weight: -2
+weight: -10
 provider: null
 plugin: system_breadcrumb_block
 settings:

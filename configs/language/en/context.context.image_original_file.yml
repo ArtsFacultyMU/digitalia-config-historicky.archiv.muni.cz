@@ -1,0 +1,4 @@
+label: 'Image Derivatives'
+conditions:
+  media_has_term:
+    uri: 'http://pcdm.org/use#OriginalFile'

@@ -1,0 +1,9 @@
+uuid: 15248dd6-f327-48fe-ac8a-d3bb6b753148
+langcode: en
+status: true
+dependencies: {  }
+name: 'Test vocabulary'
+vid: test_vocabulary
+description: 'Just for testing'
+weight: 0
+new_revision: false

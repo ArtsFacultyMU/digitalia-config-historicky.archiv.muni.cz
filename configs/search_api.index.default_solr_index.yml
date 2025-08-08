@@ -38,13 +38,13 @@ third_party_settings:
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: regex
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -53,8 +53,8 @@ third_party_settings:
     advanced:
       index_prefix: ''
     multilingual:
-      specific_languages: {  }
       use_language_undefined_as_fallback_language: false
+      specific_languages: {  }
       use_universal_collation: false
 _core:
   default_config_hash: 3HSYR81fyYsY--a93ZG1VSN3PEHVN_o78qIhDfsxzs4
@@ -232,7 +232,7 @@ field_settings:
     type: text
     configuration:
       roles:
-        anonymous: anonymous
+        - anonymous
       view_mode:
         'entity:node':
           article: search_index
@@ -363,6 +363,12 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+  aggregated_field:
+    weights:
+      add_properties: 20
   content_access:
     weights:
       preprocess_index: -6
@@ -370,18 +376,11 @@ processor_settings:
   entity_status:
     weights:
       preprocess_index: -10
-  aggregated_field:
-    weights:
-      add_properties: 20
   entity_type: {  }
-  add_url:
-    weights:
-      preprocess_index: -30
-  rendered_item:
-    weights:
-      add_properties: 0
-      pre_index_save: -10
   html_filter:
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
     all_fields: false
     fields:
       - rendered_item
@@ -393,11 +392,12 @@ processor_settings:
       h2: 3
       h3: 2
       string: 2
-    weights:
-      preprocess_index: -3
-      preprocess_query: -6
-  reverse_entity_references: {  }
   language_with_fallback: {  }
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+  reverse_entity_references: {  }
   solr_date_range:
     weights:
       preprocess_index: 0
@@ -405,7 +405,7 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
   track_changes_in_references: true
 server: default_solr_server

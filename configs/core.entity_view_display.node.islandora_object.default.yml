@@ -63,9 +63,9 @@ bundle: islandora_object
 mode: default
 content:
   display_media_service_file:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   field_abstract:
     type: basic_string

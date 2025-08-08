@@ -11,7 +11,7 @@ _core:
 id: islandora_muni_content
 theme: islandora_muni
 region: content
-weight: -11
+weight: -21
 provider: null
 plugin: system_main_block
 settings:

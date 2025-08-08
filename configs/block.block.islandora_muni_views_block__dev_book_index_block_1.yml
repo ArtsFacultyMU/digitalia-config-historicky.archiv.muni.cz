@@ -1,0 +1,38 @@
+uuid: 38a7ca6b-ce1e-4ec4-a7d2-b871a355039f
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.dev_book_index
+  module:
+    - islandora
+    - node
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_views_block__dev_book_index_block_1
+theme: islandora_muni
+region: content
+weight: -18
+provider: null
+plugin: 'views_block:dev_book_index-block_1'
+settings:
+  id: 'views_block:dev_book_index-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      inventory_item: inventory_item

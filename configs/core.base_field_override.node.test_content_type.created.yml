@@ -1,0 +1,18 @@
+uuid: 33ed9321-0682-4c0d-959d-51530551091d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.test_content_type
+id: node.test_content_type.created
+field_name: created
+entity_type: node
+bundle: test_content_type
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

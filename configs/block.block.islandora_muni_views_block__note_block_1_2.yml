@@ -13,7 +13,7 @@ dependencies:
 id: islandora_muni_views_block__note_block_1_2
 theme: islandora_muni
 region: header
-weight: -1
+weight: -9
 provider: null
 plugin: 'views_block:note-block_1'
 settings:

@@ -1,0 +1,28 @@
+uuid: 5c8cce3f-9ed4-4059-9aa4-c0ae87c3a425
+langcode: en
+status: false
+dependencies:
+  config:
+    - simple_block.simple_block.copyright_and_webmaster
+  module:
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: copyrightandwebmaster_2
+theme: islandora_muni
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:copyright_and_webmaster'
+settings:
+  id: 'simple_block:copyright_and_webmaster'
+  label: 'Copyright and webmaster'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
