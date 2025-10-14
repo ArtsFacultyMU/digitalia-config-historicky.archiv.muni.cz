@@ -11,7 +11,7 @@ dependencies:
     - islandora_muni
 id: islandora_muni_statusofcurrentingest_2
 theme: islandora_muni
-region: featured_bottom_second
+region: featured_bottom_third
 weight: -24
 provider: null
 plugin: 'simple_block:status_of_current_ingest'

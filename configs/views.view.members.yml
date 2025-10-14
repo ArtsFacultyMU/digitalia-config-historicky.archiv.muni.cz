@@ -233,7 +233,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Group '
+          label: 'Skupina '
           exclude: false
           alter:
             alter_text: false
@@ -472,7 +472,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: unpublished
+            format_custom_false: nepublikováno
             format_custom_true: ''
           group_column: value
           group_columns: {  }
@@ -586,27 +586,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
       pager:
-        type: full
+        type: none
         options:
           offset: 0
-          pagination_heading_level: h4
-          items_per_page: 50
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -819,7 +801,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_ajax: true
+      css_class: no-upper-pager
+      use_ajax: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -829,7 +812,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -851,7 +833,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions

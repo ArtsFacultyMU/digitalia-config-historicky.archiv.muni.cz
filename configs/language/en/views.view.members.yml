@@ -5,3 +5,8 @@ display:
         nothing:
           alter:
             text: "{% if view is empty %}\r\n(empty)\r\n{% endif %}"
+        field_group:
+          label: 'Group  '
+        status:
+          settings:
+            format_custom_false: unpublished

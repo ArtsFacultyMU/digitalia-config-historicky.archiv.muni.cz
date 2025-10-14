@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_statusofcurrentingest
 theme: islandora_muni
 region: featured_bottom_first
-weight: -23
+weight: -25
 provider: null
 plugin: 'simple_block:status_of_current_ingest'
 settings:

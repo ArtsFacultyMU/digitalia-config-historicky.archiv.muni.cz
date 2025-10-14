@@ -11,7 +11,7 @@ dependencies:
     - islandora_muni
 id: islandora_muni_views_block__book_index_block_1
 theme: islandora_muni
-region: featured_bottom_first
+region: featured_bottom_second
 weight: -24
 provider: null
 plugin: 'views_block:book_index-block_1'
