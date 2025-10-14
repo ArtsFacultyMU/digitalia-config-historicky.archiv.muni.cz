@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<b>{{ drupal_view('total_scan_count', 'total_scan_count') }}</b> skenů<br>\r\n<b>{{ drupal_view('total_inventory_item_count', 'total_inventory_item_count') }}</b> inventárních jednotek/knih<br>"

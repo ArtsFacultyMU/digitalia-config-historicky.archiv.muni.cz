@@ -24,6 +24,7 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^3.0",
     "drupal/bartik": "^1.0",
+    "drupal/block_class": "^4.0",
     "drupal/content_browser": "^1.0@alpha",
     "drupal/context": "^5",
     "drupal/controlled_access_terms": "^2",
