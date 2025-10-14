@@ -2,12 +2,8 @@ uuid: 38a7ca6b-ce1e-4ec4-a7d2-b871a355039f
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.dev_book_index
   module:
-    - islandora
     - node
-    - views
   theme:
     - islandora_muni
 id: islandora_muni_views_block__dev_book_index_block_1
@@ -24,11 +20,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

@@ -1,6 +1,6 @@
-uuid: b721590d-8a4e-4951-855f-ba118f3bee14
+uuid: 14bac18f-c94c-4ead-9bd6-5ef431a9ba26
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - simple_block.simple_block.status_of_current_ingest
@@ -9,10 +9,10 @@ dependencies:
     - user
   theme:
     - islandora_muni
-id: islandora_muni_statusofcurrentingest
+id: islandora_muni_statusofcurrentingest_2
 theme: islandora_muni
-region: featured_bottom_first
-weight: -23
+region: featured_bottom_second
+weight: -24
 provider: null
 plugin: 'simple_block:status_of_current_ingest'
 settings:
@@ -28,3 +28,4 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       administrator: administrator
+      editor: editor

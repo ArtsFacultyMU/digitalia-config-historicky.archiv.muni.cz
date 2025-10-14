@@ -1,0 +1,37 @@
+uuid: 794e4025-d81d-4896-a558-22f050e2a970
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.directory.field_member_of
+    - field.field.node.directory.field_model
+    - field.field.node.directory.field_public_note
+    - field.field.node.directory.field_weight
+    - node.type.directory
+  module:
+    - user
+id: node.directory.token
+targetEntityType: node
+bundle: directory
+mode: token
+content: {  }
+hidden:
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  field_member_of: true
+  field_model: true
+  field_public_note: true
+  field_weight: true
+  islandora_fits_checksum: true
+  langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
+  search_api_excerpt: true

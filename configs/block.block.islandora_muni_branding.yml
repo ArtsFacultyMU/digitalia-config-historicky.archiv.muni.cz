@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - islandora
     - language
     - system
   theme:
@@ -13,7 +12,7 @@ _core:
 id: islandora_muni_branding
 theme: islandora_muni
 region: header
-weight: -7
+weight: -9
 provider: null
 plugin: system_branding_block
 settings:
@@ -25,11 +24,6 @@ settings:
   use_site_name: false
   use_site_slogan: false
 visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
   language:
     id: language
     negate: false

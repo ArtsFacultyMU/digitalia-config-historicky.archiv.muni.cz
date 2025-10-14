@@ -5,14 +5,13 @@ dependencies:
   config:
     - simple_block.simple_block.developed_and_operated_by
   module:
-    - islandora
     - simple_block
   theme:
     - islandora_muni
 id: islandora_muni_developedandoperatedby
 theme: islandora_muni
 region: header
-weight: -16
+weight: -18
 provider: null
 plugin: 'simple_block:developed_and_operated_by'
 settings:
@@ -20,9 +19,4 @@ settings:
   label: 'Developed and operated by'
   label_display: '0'
   provider: simple_block
-visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
+visibility: {  }

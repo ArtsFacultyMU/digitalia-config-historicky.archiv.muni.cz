@@ -3,14 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - islandora
     - language
   theme:
     - islandora_muni
 id: languageswitcher_2
 theme: islandora_muni
 region: header
-weight: -21
+weight: -23
 provider: null
 plugin: 'language_block:language_interface'
 settings:
@@ -18,9 +17,4 @@ settings:
   label: 'Language switcher'
   label_display: '0'
   provider: language
-visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
+visibility: {  }

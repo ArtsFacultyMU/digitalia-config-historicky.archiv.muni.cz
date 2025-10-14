@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - archive_generate_derivatives_block
-    - islandora
     - node
     - user
   theme:
@@ -21,11 +20,6 @@ settings:
   label_display: '0'
   provider: archive_generate_derivatives_block
 visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
   user_role:
     id: user_role
     negate: false

@@ -33,11 +33,6 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-  islandora_fits_checksum:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
   display_media_entity_view_1: true
   display_media_entity_view_2: true
@@ -54,11 +49,13 @@ hidden:
   field_public_note: true
   field_time_range: true
   field_weight: true
+  islandora_fits_checksum: true
   langcode: true
   links: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
+  paged_title_entity_view_1: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true

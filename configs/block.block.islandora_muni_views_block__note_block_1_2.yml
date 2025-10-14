@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.note
   module:
-    - islandora
     - node
     - views
   theme:
@@ -13,7 +12,7 @@ dependencies:
 id: islandora_muni_views_block__note_block_1_2
 theme: islandora_muni
 region: header
-weight: -9
+weight: -11
 provider: null
 plugin: 'views_block:note-block_1'
 settings:
@@ -25,11 +24,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

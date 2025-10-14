@@ -5,14 +5,13 @@ dependencies:
   config:
     - simple_block.simple_block.ics_muni_logo
   module:
-    - islandora
     - simple_block
   theme:
     - islandora_muni
 id: islandora_muni_icsmunilogo
 theme: islandora_muni
 region: header
-weight: -13
+weight: -15
 provider: null
 plugin: 'simple_block:ics_muni_logo'
 settings:
@@ -20,9 +19,4 @@ settings:
   label: 'ics muni logo'
   label_display: '0'
   provider: simple_block
-visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
+visibility: {  }

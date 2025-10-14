@@ -1,6 +1,10 @@
 display:
   default:
+    display_title: Master
     display_options:
+      fields:
+        node_bulk_form:
+          action_title: Action
       pager:
         options:
           expose:

@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - digitalia_muni_workbench_ingest
-    - islandora
     - node
     - user
   theme:
@@ -21,11 +20,6 @@ settings:
   label_display: visible
   provider: digitalia_muni_workbench_ingest
 visibility:
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
   user_role:
     id: user_role
     negate: false

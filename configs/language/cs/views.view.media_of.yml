@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -17,3 +18,8 @@ display:
         field_media_of_target_id:
           exception:
             title: All
+  page_1:
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Action

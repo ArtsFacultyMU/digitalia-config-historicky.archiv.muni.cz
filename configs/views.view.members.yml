@@ -32,6 +32,72 @@ display:
     display_options:
       title: Children
       fields:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_label:
           id: field_label
           table: node__field_label
@@ -236,18 +302,36 @@ display:
           exclude: false
           alter:
             alter_text: false
+            text: "{{ drupal_entity('node', nid, 'token') }}"
             make_link: false
+            path: '/node/{ nid }'
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -333,21 +417,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        nid:
-          id: nid
+        status:
+          id: status
           table: node_field_data
-          field: nid
+          field: status
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: nid
+          entity_field: status
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: "{% if  title is not empty %}\r\n({{ status }})\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -385,10 +469,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
+          type: boolean
           settings:
-            thousand_separator: ''
-            prefix_suffix: false
+            format: custom
+            format_custom_false: unpublished
+            format_custom_true: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -460,7 +545,7 @@ display:
           admin_label: 'Empty clause'
           plugin_id: custom
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: "{% if view is empty %}\r\n(prázdné)\r\n{% endif %}"
@@ -501,9 +586,27 @@ display:
           empty_zero: false
           hide_alter_empty: true
       pager:
-        type: none
+        type: full
         options:
           offset: 0
+          pagination_heading_level: h4
+          items_per_page: 50
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -640,18 +743,17 @@ display:
           not: false
           target_entity_type_id: node
       filters:
-        status:
-          id: status
+        status_extra:
+          id: status_extra
           table: node_field_data
-          field: status
+          field: status_extra
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: status
-          plugin_id: boolean
+          plugin_id: node_status
           operator: '='
-          value: '1'
+          value: false
           group: 1
           exposed: false
           expose:
@@ -689,7 +791,7 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          type: ol
+          type: ul
           wrapper_class: item-list
           class: ''
       row:
@@ -697,12 +799,13 @@ display:
         options:
           default_field_elements: true
           inline:
+            nid: nid
             field_label: field_label
             field_book_number_value: field_book_number_value
             field_group: field_group
             title: title
             field_nad_number_value: field_nad_number_value
-            nid: nid
+            status: status
             view: view
             nothing: nothing
           separator: ', '
@@ -716,6 +819,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -725,6 +829,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -745,6 +851,8 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

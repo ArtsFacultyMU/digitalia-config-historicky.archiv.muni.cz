@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - islandora
     - system
   theme:
     - islandora_muni
@@ -12,7 +11,7 @@ _core:
 id: islandora_muni_breadcrumbs
 theme: islandora_muni
 region: header
-weight: -10
+weight: -12
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -26,8 +25,3 @@ visibility:
     negate: true
     context_mapping: {  }
     pages: "<front>\r\n/about\r\n/help"
-  media_source_mimetype:
-    id: media_source_mimetype
-    negate: false
-    context_mapping: {  }
-    mimetype: ''
