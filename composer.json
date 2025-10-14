@@ -100,7 +100,8 @@
     ],
     "patches": {
       "drupal/core": {
-        "Disable rollback migration operation": "./patches/form.css.patch"
+        "Disable rollback migration operation": "./patches/form.css.patch",
+        "Fix image style generation": "./patches/ImageStyle.patch"
       }
     },
     "drupal-scaffold": {
