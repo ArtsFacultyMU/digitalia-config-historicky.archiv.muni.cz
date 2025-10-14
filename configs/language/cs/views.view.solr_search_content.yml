@@ -12,3 +12,6 @@ display:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
+      header:
+        result:
+          content: 'Zobrazeno @start - @end z @total'
