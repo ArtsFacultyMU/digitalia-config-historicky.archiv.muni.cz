@@ -393,7 +393,7 @@ display:
         options: {  }
       relationships: {  }
       css_class: no-upper-pager
-      show_admin_links: false
+      show_admin_links: true
       header:
         result:
           id: result
