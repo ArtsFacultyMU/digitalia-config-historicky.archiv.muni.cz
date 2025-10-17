@@ -1,15 +1,15 @@
-uuid: 72aed8e2-dea2-4f49-8e13-2383388b5433
+uuid: 36e9ca88-9635-471f-8976-04714f68bf70
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_index_name
+    - field.storage.node.field_section
     - node.type.scan
-id: node.scan.field_index_name
-field_name: field_index_name
+id: node.scan.field_section
+field_name: field_section
 entity_type: node
 bundle: scan
-label: 'Index name'
+label: Section
 description: ''
 required: false
 translatable: false

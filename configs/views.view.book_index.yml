@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_index_letter
     - field.storage.node.field_page_name
+    - field.storage.node.field_section
     - field.storage.node.field_weight
     - search_api.index.archive_index
   module:
@@ -99,6 +100,76 @@ display:
           id: field_index_letter
           table: search_api_index_archive_index
           field: field_index_letter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: false
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_section:
+          id: field_section
+          table: search_api_index_archive_index
+          field: field_section
           relationship: none
           group_type: group
           admin_label: ''
@@ -401,7 +472,11 @@ display:
       style:
         type: grid_responsive
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_section
+              rendered: true
+              rendered_strip: false
           columns: 12
           cell_min_width: 40
           grid_gutter: 10
@@ -434,6 +509,7 @@ display:
       tags:
         - 'config:field.storage.node.field_index_letter'
         - 'config:field.storage.node.field_page_name'
+        - 'config:field.storage.node.field_section'
         - 'config:field.storage.node.field_weight'
         - 'config:search_api.index.archive_index'
         - 'search_api_list:archive_index'
@@ -455,6 +531,7 @@ display:
       tags:
         - 'config:field.storage.node.field_index_letter'
         - 'config:field.storage.node.field_page_name'
+        - 'config:field.storage.node.field_section'
         - 'config:field.storage.node.field_weight'
         - 'config:search_api.index.archive_index'
         - 'search_api_list:archive_index'
