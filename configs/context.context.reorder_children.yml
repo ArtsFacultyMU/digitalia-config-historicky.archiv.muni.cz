@@ -13,7 +13,7 @@ name: reorder_children
 group: Display
 description: 'Menu for reordering children'
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role

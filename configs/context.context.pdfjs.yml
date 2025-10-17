@@ -20,6 +20,7 @@ conditions:
       node: '@node.node_route_context:node'
     uri: 'http://mozilla.github.io/pdf.js'
     logic: and
+    naive_references: false
 reactions:
   view_mode_alter:
     id: view_mode_alter

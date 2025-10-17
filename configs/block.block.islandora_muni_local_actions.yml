@@ -9,7 +9,7 @@ _core:
 id: islandora_muni_local_actions
 theme: islandora_muni
 region: content
-weight: -22
+weight: -29
 provider: null
 plugin: local_actions_block
 settings:

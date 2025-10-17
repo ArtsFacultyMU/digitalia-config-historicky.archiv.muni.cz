@@ -12,7 +12,7 @@ name: inventory_item_properties
 group: Display
 description: ''
 requireAllConditions: false
-disabled: false
+disabled: true
 conditions:
   'entity_bundle:node':
     id: 'entity_bundle:node'

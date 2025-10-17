@@ -11,7 +11,7 @@ dependencies:
 id: islandora_muni_ingestitems
 theme: islandora_muni
 region: sidebar_second
-weight: 0
+weight: -20
 provider: null
 plugin: digitalia_muni_ingest_items
 settings:

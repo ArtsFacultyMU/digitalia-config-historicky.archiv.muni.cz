@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - language
   theme:
     - islandora_muni
+third_party_settings:
+  block_class:
+    replaced_id: block-languageswitcher
 id: languageswitcher_2
 theme: islandora_muni
 region: header

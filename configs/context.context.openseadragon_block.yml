@@ -22,6 +22,7 @@ conditions:
       node: '@node.node_route_context:node'
     uri: 'http://openseadragon.github.io,https://schema.org/Book'
     logic: and
+    naive_references: false
 reactions:
   blocks:
     id: blocks

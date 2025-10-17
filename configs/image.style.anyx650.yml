@@ -1,0 +1,15 @@
+uuid: b313f85b-6caa-447a-8ec7-21ae5fa8b186
+langcode: en
+status: true
+dependencies: {  }
+name: anyx650
+label: anyx650
+effects:
+  973c62bc-2f1b-4a81-8e46-52ad88e8614c:
+    uuid: 973c62bc-2f1b-4a81-8e46-52ad88e8614c
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 650
+      upscale: false

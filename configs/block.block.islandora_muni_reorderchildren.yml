@@ -1,26 +1,35 @@
-uuid: 1e536c5f-4420-443e-91c9-0518eaaa7024
+uuid: 6bea1d2d-7688-443c-a98f-05c16dea2822
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - simple_block.simple_block.test_token
+    - simple_block.simple_block.reorder_children
   module:
     - node
     - simple_block
+    - user
   theme:
     - islandora_muni
-id: islandora_muni_testtoken
+id: islandora_muni_reorderchildren
 theme: islandora_muni
 region: sidebar_second
-weight: -11
+weight: -22
 provider: null
-plugin: 'simple_block:test_token'
+plugin: 'simple_block:reorder_children'
 settings:
-  id: 'simple_block:test_token'
-  label: 'TEST token'
-  label_display: visible
+  id: 'simple_block:reorder_children'
+  label: 'Reorder children'
+  label_display: '0'
   provider: simple_block
 visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

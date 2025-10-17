@@ -1,24 +1,29 @@
-uuid: 122c0977-2903-49ad-81c2-217945e1a996
+uuid: 9406ee6b-5267-444b-9a4b-670c1e3a0f1b
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.paged_title
   module:
-    - archive_generate_derivatives_block
     - node
     - user
+    - views
   theme:
     - islandora_muni
-id: generatederivativesofallscans.
+id: islandora_muni_views_block__paged_title_block_1
 theme: islandora_muni
 region: sidebar_second
-weight: -21
+weight: -31
 provider: null
-plugin: archive_generate_derivatives_block
+plugin: 'views_block:paged_title-block_1'
 settings:
-  id: archive_generate_derivatives_block
-  label: 'Thumbnails status'
-  label_display: visible
-  provider: archive_generate_derivatives_block
+  id: 'views_block:paged_title-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
 visibility:
   user_role:
     id: user_role

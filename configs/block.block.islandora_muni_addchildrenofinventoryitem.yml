@@ -1,24 +1,26 @@
-uuid: 122c0977-2903-49ad-81c2-217945e1a996
+uuid: 2edcd37a-9f29-4659-b3e9-b5e95597c8e3
 langcode: en
 status: true
 dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_inventory_item
   module:
-    - archive_generate_derivatives_block
     - node
+    - simple_block
     - user
   theme:
     - islandora_muni
-id: generatederivativesofallscans.
+id: islandora_muni_addchildrenofinventoryitem
 theme: islandora_muni
 region: sidebar_second
-weight: -21
+weight: -24
 provider: null
-plugin: archive_generate_derivatives_block
+plugin: 'simple_block:add_children_of_inventory_item'
 settings:
-  id: archive_generate_derivatives_block
-  label: 'Thumbnails status'
-  label_display: visible
-  provider: archive_generate_derivatives_block
+  id: 'simple_block:add_children_of_inventory_item'
+  label: 'Add children of inventory item'
+  label_display: '0'
+  provider: simple_block
 visibility:
   user_role:
     id: user_role

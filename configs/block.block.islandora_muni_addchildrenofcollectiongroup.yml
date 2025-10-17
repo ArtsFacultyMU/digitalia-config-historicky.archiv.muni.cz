@@ -1,24 +1,26 @@
-uuid: 122c0977-2903-49ad-81c2-217945e1a996
+uuid: 420a8d5f-4256-4512-b927-807e20bc11e6
 langcode: en
 status: true
 dependencies:
+  config:
+    - simple_block.simple_block.add_children_of_collection_group
   module:
-    - archive_generate_derivatives_block
     - node
+    - simple_block
     - user
   theme:
     - islandora_muni
-id: generatederivativesofallscans.
+id: islandora_muni_addchildrenofcollectiongroup
 theme: islandora_muni
 region: sidebar_second
-weight: -21
+weight: -30
 provider: null
-plugin: archive_generate_derivatives_block
+plugin: 'simple_block:add_children_of_collection_group'
 settings:
-  id: archive_generate_derivatives_block
-  label: 'Thumbnails status'
-  label_display: visible
-  provider: archive_generate_derivatives_block
+  id: 'simple_block:add_children_of_collection_group'
+  label: 'Add children of collection group'
+  label_display: '0'
+  provider: simple_block
 visibility:
   user_role:
     id: user_role
@@ -34,4 +36,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      inventory_item: inventory_item
+      collection_group: collection_group

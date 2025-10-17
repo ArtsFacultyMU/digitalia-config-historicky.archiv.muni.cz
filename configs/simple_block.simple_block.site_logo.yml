@@ -7,5 +7,5 @@ dependencies:
 id: site_logo
 title: 'Site logo'
 content:
-  value: "<p><a href=\"/\"><img alt=\"Site logo\" data-entity-type=\"file\" src=\"/themes/custom/islandora_muni/historicky-archiv-en.svg\" /></a></p>\r\n"
+  value: '<p><a href="/"><img src="/themes/custom/islandora_muni/platform_specific/images/historicky-archiv-en.svg" data-entity-type="file" alt="Site logo" width="228" height="66"></a></p>'
   format: full_html

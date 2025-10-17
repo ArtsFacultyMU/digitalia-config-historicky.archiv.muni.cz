@@ -13,7 +13,7 @@ name: add_children_to_fond_fond_collection
 group: Display
 description: 'Menu for adding children'
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role

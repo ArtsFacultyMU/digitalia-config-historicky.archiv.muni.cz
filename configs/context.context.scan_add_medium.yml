@@ -13,7 +13,7 @@ name: scan_add_medium
 group: Display
 description: 'Menu for adding medium to scan'
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role

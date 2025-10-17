@@ -13,7 +13,7 @@ name: display_id_of_inventory_item
 group: Display
 description: "Displays the ID\_of inventory item node for batch import"
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role

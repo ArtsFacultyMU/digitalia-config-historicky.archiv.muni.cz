@@ -5,6 +5,8 @@ field_type: multiple_textfields
 default_case: standard
 block_classes_stored:
   - block-views-block-homepage-statistics-block-1
+  - children-block
+  - remove_title
 enable_attributes: true
 enable_auto_complete: true
 qty_classes_per_block: 10
@@ -21,3 +23,4 @@ maxlength_id: 255
 attribute_keys_stored: '[]'
 attribute_value_stored: '[]'
 attributes_inline: '[]'
+id_replacement_stored: '{"languageswitcher_2":"block-languageswitcher"}'

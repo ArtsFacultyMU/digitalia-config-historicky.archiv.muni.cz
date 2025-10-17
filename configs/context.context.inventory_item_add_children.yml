@@ -13,7 +13,7 @@ name: inventory_item_add_children
 group: Display
 description: 'Menu for adding children'
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role
@@ -57,7 +57,7 @@ reactions:
         id: 'simple_block:add_children_of_inventory_item'
         label: 'Add children of inventory item'
         provider: simple_block
-        label_display: visible
+        label_display: '0'
         region: sidebar_second
         weight: '0'
         custom_id: simple_block_add_children_of_inventory_item

@@ -17,7 +17,7 @@ name: collection
 group: Display
 description: 'Display block of children'
 requireAllConditions: false
-disabled: false
+disabled: true
 conditions:
   node_has_term:
     id: node_has_term
@@ -26,6 +26,7 @@ conditions:
       node: '@node.node_route_context:node'
     uri: 'http://purl.org/dc/dcmitype/Collection'
     logic: or
+    naive_references: 0
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

@@ -23,6 +23,7 @@ conditions:
     tids:
       -
         target_id: 35
+    naive_references: false
 reactions:
   view_mode_alter:
     id: view_mode_alter

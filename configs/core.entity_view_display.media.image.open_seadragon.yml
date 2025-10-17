@@ -12,7 +12,7 @@ dependencies:
     - field.field.media.image.field_mime_type
     - field.field.media.image.field_original_name
     - field.field.media.image.field_width
-    - image.style.max_650x650
+    - image.style.anyx650
     - media.type.image
   module:
     - photoswipe
@@ -30,7 +30,7 @@ content:
     label: hidden
     settings:
       photoswipe_thumbnail_style_first: ''
-      photoswipe_thumbnail_style: max_650x650
+      photoswipe_thumbnail_style: anyx650
       photoswipe_image_style: ''
       photoswipe_reference_image_field: ''
       photoswipe_view_mode: open_seadragon

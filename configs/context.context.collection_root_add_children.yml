@@ -13,7 +13,7 @@ name: collection_root_add_children
 group: Display
 description: 'Menu for adding children'
 requireAllConditions: true
-disabled: false
+disabled: true
 conditions:
   user_role:
     id: user_role
@@ -55,10 +55,11 @@ reactions:
       073edd76-422e-4061-bfc3-7a9ee99e878b:
         uuid: 073edd76-422e-4061-bfc3-7a9ee99e878b
         id: 'simple_block:add_children_of_collection_root'
-        label: 'Add children of collection root'
+        label: 'Přidat členy kořene sbírek'
         provider: simple_block
-        label_display: visible
+        label_display: '0'
         region: sidebar_second
+        weight: '0'
         custom_id: simple_block_add_children_of_collection_root
         theme: islandora_muni
         css_class: hide_title

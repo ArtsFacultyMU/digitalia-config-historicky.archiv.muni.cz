@@ -399,16 +399,13 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: grid
+        type: grid_responsive
         options:
           grouping: {  }
-          columns: 6
-          automatic_width: true
+          columns: 12
+          cell_min_width: 40
+          grid_gutter: 10
           alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
       row:
         type: fields
         options:
@@ -447,6 +444,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

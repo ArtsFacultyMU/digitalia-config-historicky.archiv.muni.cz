@@ -20,6 +20,7 @@ conditions:
       media: '@islandora.media_route_context_provider:media'
     uri: 'http://pcdm.org/use#OriginalFile'
     logic: and
+    naive_references: false
   parent_node_has_term:
     id: parent_node_has_term
     negate: false
@@ -27,6 +28,7 @@ conditions:
       media: '@islandora.media_route_context_provider:media'
     uri: 'http://purl.org/coar/resource_type/c_12ce'
     logic: and
+    naive_references: false
 reactions:
   derivative:
     id: derivative

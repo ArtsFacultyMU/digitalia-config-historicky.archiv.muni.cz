@@ -12,7 +12,7 @@ _core:
 id: islandora_muni_page_title
 theme: islandora_muni
 region: content
-weight: -25
+weight: -32
 provider: null
 plugin: page_title_block
 settings:

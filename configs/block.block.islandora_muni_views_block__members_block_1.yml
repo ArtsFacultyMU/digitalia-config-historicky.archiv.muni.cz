@@ -1,25 +1,32 @@
-uuid: 1e536c5f-4420-443e-91c9-0518eaaa7024
+uuid: 659f7157-6468-4ca4-aa8d-bdc40cb48605
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - simple_block.simple_block.test_token
+    - views.view.members
   module:
+    - block_class
     - node
-    - simple_block
+    - views
   theme:
     - islandora_muni
-id: islandora_muni_testtoken
+third_party_settings:
+  block_class:
+    classes: children-block
+id: islandora_muni_views_block__members_block_1
 theme: islandora_muni
-region: sidebar_second
-weight: -11
+region: content
+weight: -24
 provider: null
-plugin: 'simple_block:test_token'
+plugin: 'views_block:members-block_1'
 settings:
-  id: 'simple_block:test_token'
-  label: 'TEST token'
-  label_display: visible
-  provider: simple_block
+  id: 'views_block:members-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
@@ -34,4 +41,3 @@ visibility:
       fond: fond
       fond_group: fond_group
       fond_root: fond_root
-      inventory_item: inventory_item
