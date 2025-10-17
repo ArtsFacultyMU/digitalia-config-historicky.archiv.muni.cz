@@ -1,0 +1,19 @@
+uuid: 72aed8e2-dea2-4f49-8e13-2383388b5433
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_index_name
+    - node.type.scan
+id: node.scan.field_index_name
+field_name: field_index_name
+entity_type: node
+bundle: scan
+label: 'Index name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
